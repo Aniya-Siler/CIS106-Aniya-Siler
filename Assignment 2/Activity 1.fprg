@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cash america"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-30 05:35:49 PM"/>
+        <attribute name="created" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMDgtMzA7MDU6MDE6MzggUE07MzUyMw=="/>
+        <attribute name="edited" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMDgtMzA7MDU6MzU6NDkgUE07NDszNjQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hello, World!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
