@@ -39,6 +39,13 @@ def test_assignment_2_activity_1_program_plan_input():
         r"\nInput:.*?\n\s+None.*?\n",
         "Program plan Input: section missing or incorrect.")
 
+    test.check_file_contains(
+        "Assignment 2",
+        "Activity 1",
+        "txt",
+        r"\n\nInput:.*?\n\s+None.*?\n",
+        "Program plan Input: section spacing is incorrect.")
+
 
 def test_assignment_2_activity_1_program_plan_process():
     test.check_file_contains(
@@ -48,6 +55,13 @@ def test_assignment_2_activity_1_program_plan_process():
         r"\nProcess:.*?\n\s+None.*?\n",
         "Program plan Process: section missing or incorrect.")
 
+    test.check_file_contains(
+        "Assignment 2",
+        "Activity 1",
+        "txt",
+        r"\n\nProcess:.*?\n\s+None.*?\n",
+        "Program plan Process: section spacing is incorrect.")
+
 
 def test_assignment_2_activity_1_program_plan_output():
     test.check_file_contains(
@@ -56,6 +70,13 @@ def test_assignment_2_activity_1_program_plan_output():
         "txt",
         r"\nOutput:.*?\n\s+Hello .*?",
         "Program plan Output: section missing or incorrect.")
+
+    test.check_file_contains(
+        "Assignment 2",
+        "Activity 1",
+        "txt",
+        r"\n\nOutput:.*?\n\s+Hello .*?",
+        "Program plan Output: section spacing is incorrect.")
 
 
 def test_assignment_2_activity_1_flowgorithm_comments():
