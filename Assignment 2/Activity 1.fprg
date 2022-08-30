@@ -11,7 +11,7 @@
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <output expression="&quot;Hello, World!&quot;" newline="True"/>
+            <output expression="&quot;Hello, Aniya!&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
