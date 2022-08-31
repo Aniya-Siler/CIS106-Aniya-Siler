@@ -27,7 +27,7 @@ def test_assignment_3_activity_1_program_plan_structure():
         "Assignment 3",
         "Activity 1",
         "txt",
-        r".+?\n\nInput:.+?\n\s+.+?\n\nProcess:.+?\n\s+.+?\n\nOutput:.+?\n\s+.+?",
+        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -83,7 +83,7 @@ def test_assignment_3_activity_2_program_plan_structure():
         "Assignment 3",
         "Activity 2",
         "txt",
-        r".+?\n\nInput:.+?\n\s+.+?\n\nProcess:.+?\n\s+.+?\n\nOutput:.+?\n\s+.+?",
+        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -139,7 +139,7 @@ def test_assignment_3_activity_3_program_plan_structure():
         "Assignment 3",
         "Activity 3",
         "txt",
-        r".+?\n\nInput:.+?\n\s+.+?\n\nProcess:.+?\n\s+.+?\n\nOutput:.+?\n\s+.+?",
+        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -195,7 +195,7 @@ def test_assignment_3_activity_4_program_plan_structure():
         "Assignment 3",
         "Activity 4",
         "txt",
-        r".+?\n\nInput:.+?\n\s+.+?\n\nProcess:.+?\n\s+.+?\n\nOutput:.+?\n\s+.+?",
+        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -250,7 +250,7 @@ def test_assignment_3_activity_5_program_plan_structure():
         "Assignment 3",
         "Activity 5",
         "txt",
-        r".+?\n\nInput:.+?\n\s+.+?\n\nProcess:.+?\n\s+.+?\n\nOutput:.+?\n\s+.+?",
+        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -305,7 +305,7 @@ def test_assignment_3_activity_6_program_plan_structure():
         "Assignment 3",
         "Activity 6",
         "txt",
-        r".+?\n\nInput:.+?\n\s+.+?\n\nProcess:.+?\n\s+.+?\n\nOutput:.+?\n\s+.+?",
+        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -362,7 +362,7 @@ def test_assignment_3_activity_7_program_plan_structure():
         "Assignment 3",
         "Activity 7",
         "txt",
-        r".+?\n\nInput:.+?\n\s+.+?\n\nProcess:.+?\n\s+.+?\n\nOutput:.+?\n\s+.+?",
+        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
