@@ -55,7 +55,7 @@ def test_assignment_3_activity_1_program_plan_process():
         "Assignment 3",
         "Activity 1",
         "txt",
-        r"Process:.*?weekly.+?monthly.+?(yearly|annual).+?Output",
+        r"Process:.*?weekly.+?(yearly|annual|monthly).+?(monthly|yearly|annual).+?Output",
         "Program plan Process: section missing or incorrect. "
             "Expected weekly, monthly, and yearly.")
 
@@ -172,10 +172,10 @@ def test_assignment_3_activity_3_program_plan_process():
             "Expected yards, feet, and inches or kilimeters, meters, and centimeters.")
 
 
-def test_assignment_3_activity_2_program_plan_output():
+def test_assignment_3_activity_3_program_plan_output():
     test.check_file_contains(
         "Assignment 3",
-        "Activity 2",
+        "Activity 3",
         "txt",
         r"Output:.*?(yards|kilometers).+?(feet|meters).+?(inches|centimeters)",
         "Program plan Output: section missing or incorrect. "
