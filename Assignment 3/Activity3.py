@@ -7,3 +7,5 @@ inches = miles * 63360.23622
 print("The Distance in Yards is" + str(yard) + "yds")
 print("The Distance in Feet is" + str(feet) + "ft")
 print("The Distance in Inches is" + str(inches) + "Ins")
+
+# Refrences: Used Wikiversity Programming Fundamentals/Variables/Input-Process-Output Model
