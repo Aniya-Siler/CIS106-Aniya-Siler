@@ -6,3 +6,4 @@ This coding class is required in my field of study which is Web Design. I have t
 ## Assignment 2
 The programming language that I selected was Python and I will use Thonny as the integrated development environment. I chose this language because I found that it was the most beginner-friendly programming language, and it would allow me to get the most out of this class without being heavily confused and overwhelmed. I also chose Python because Twitter uses Python, and I found this really interesting. I intend on using this language in order to build a website for my small business(handmade soy wax candles), and I am also going to apply it to my future career in web design/web development.
 
+## Assignment 3
