@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cash america"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-06 09:32:12 PM"/>
+        <attribute name="created" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMDktMDY7MDc6NTI6NTYgUE07MzUzNQ=="/>
+        <attribute name="edited" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMDktMDY7MDk6MzI6MTIgUE07NTszNjM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program converts an input Miles to Yards, Feet, Inches."/>
+            <declare name="Miles" type="Real" array="False" size=""/>
+            <declare name="Yard" type="Real" array="False" size=""/>
+            <declare name="Feet" type="Real" array="False" size=""/>
+            <declare name="Inches" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter amount of Miles.&quot;" newline="True"/>
+            <input variable="Miles"/>
+            <assign variable="Yard" expression="(Miles * 1760.0065617)"/>
+            <assign variable="Feet" expression="(Miles * 5280.019685)"/>
+            <assign variable="Inches" expression="(Miles * 63360.23622)"/>
+            <output expression="&quot;The Distance in Yards is&quot; &amp; Yard &amp; &quot;yds&quot;" newline="True"/>
+            <output expression="&quot;The Distance in Feet is&quot; &amp; Feet &amp; &quot;ft&quot;" newline="True"/>
+            <output expression="&quot;The Distance in Inches is&quot; &amp; Inches &amp; &quot;Ins&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
