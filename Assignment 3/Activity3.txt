@@ -5,9 +5,9 @@ Display prompt
 "Enter amount of Miles."
 
 Process:
-Convert amount of Miles to Yards
-Convert amount of Miles to Feet
-Convet amount of Miles to Inches
+Convert amount of Miles to Yards (Miles * 1760.0065617)
+Convert amount of Miles to Feet (Miles * 5280.019685)
+Convet amount of Miles to Inches (Miles * 63360.23622)
 
 Output:
 Display the Amount of Miles in Yards
