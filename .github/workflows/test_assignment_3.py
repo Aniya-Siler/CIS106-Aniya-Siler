@@ -19,15 +19,15 @@ def test_assignment_3_activity_1_program_plan_structure():
         "Assignment 3",
         "Activity 1",
         "txt",
-        r".+?\nInput:.+?Process:.+?Output:",
+        r".+?\nInput.+?Process.+?Output",
         "Program plan structure doesn't match rquirements. "
-            "Check for introduction, Input:, Process:, and Output:.")
+            "Check for introduction, Input, Process, and Output.")
 
     test.check_file_contains(
         "Assignment 3",
         "Activity 1",
         "txt",
-        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
+        r".+?\n\s*\nInput.*?\n\s+.+?\n\s*\nProcess.*?\n\s+.+?\n\s*\nOutput.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -46,8 +46,8 @@ def test_assignment_3_activity_1_program_plan_input():
         "Assignment 3",
         "Activity 1",
         "txt",
-        r"Input:.*?hours.*?rate.*?Process:",
-        "Program plan Input: section missing or incorrect. Expected hours and rate")
+        r"Input.*?hours.*?(rate|wage).*?Process",
+        "Program plan Input section missing or incorrect. Expected hours and rate")
 
 
 def test_assignment_3_activity_1_program_plan_process():
@@ -55,8 +55,8 @@ def test_assignment_3_activity_1_program_plan_process():
         "Assignment 3",
         "Activity 1",
         "txt",
-        r"Process:.*?weekly.+?(yearly|annual|monthly).+?(monthly|yearly|annual).+?Output",
-        "Program plan Process: section missing or incorrect. "
+        r"Process.*?weekly.+?(yearly|annual|monthly).+?(monthly|yearly|annual).+?Output",
+        "Program plan Process section missing or incorrect. "
             "Expected weekly, monthly, and yearly.")
 
 
@@ -65,8 +65,8 @@ def test_assignment_3_activity_1_program_plan_output():
         "Assignment 3",
         "Activity 1",
         "txt",
-        r"Output:.*?weekly.+?monthly.+?(yearly|annual)",
-        "Program plan Output: section missing or incorrect. "
+        r"Output.*?weekly.+?monthly.+?(yearly|annual)",
+        "Program plan Output section missing or incorrect. "
             "Expected weekly, monthly, and yearly.")
 
 
@@ -75,15 +75,15 @@ def test_assignment_3_activity_2_program_plan_structure():
         "Assignment 3",
         "Activity 2",
         "txt",
-        r".+?\nInput:.+?Process:.+?Output:",
+        r".+?\nInput.+?Process.+?Output",
         "Program plan structure doesn't match rquirements. "
-            "Check for introduction, Input:, Process:, and Output:.")
+            "Check for introduction, Input, Process, and Output.")
 
     test.check_file_contains(
         "Assignment 3",
         "Activity 2",
         "txt",
-        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
+        r".+?\n\s*\nInput.*?\n\s+.+?\n\s*\nProcess.*?\n\s+.+?\n\s*\nOutput.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -102,8 +102,8 @@ def test_assignment_3_activity_2_program_plan_input():
         "Assignment 3",
         "Activity 2",
         "txt",
-        r"Input:.*?years.*?Process:",
-        "Program plan Input: section missing or incorrect. Expected years")
+        r"Input.*?years.*?Process",
+        "Program plan Input section missing or incorrect. Expected years")
 
 
 def test_assignment_3_activity_2_program_plan_process():
@@ -111,8 +111,8 @@ def test_assignment_3_activity_2_program_plan_process():
         "Assignment 3",
         "Activity 2",
         "txt",
-        r"Process:.*?months.+?days.+?hours.+?seconds.+?Output",
-        "Program plan Process: section missing or incorrect. "
+        r"Process.*?months.+?days.+?hours.+?seconds.+?Output",
+        "Program plan Process section missing or incorrect. "
             "Expected months, days, hours, and seconds.")
 
 
@@ -121,8 +121,8 @@ def test_assignment_3_activity_2_program_plan_output():
         "Assignment 3",
         "Activity 2",
         "txt",
-        r"Output:.*?months.+?days.+?hours.+?seconds",
-        "Program plan Output: section missing or incorrect. "
+        r"Output.*?months.+?days.+?hours.+?seconds",
+        "Program plan Output section missing or incorrect. "
             "Expected months, days, hours, and seconds.")
 
 
@@ -131,15 +131,15 @@ def test_assignment_3_activity_3_program_plan_structure():
         "Assignment 3",
         "Activity 3",
         "txt",
-        r".+?\nInput:.+?Process:.+?Output:",
+        r".+?\nInput.+?Process.+?Output",
         "Program plan structure doesn't match rquirements. "
-            "Check for introduction, Input:, Process:, and Output:.")
+            "Check for introduction, Input, Process, and Output.")
 
     test.check_file_contains(
         "Assignment 3",
         "Activity 3",
         "txt",
-        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
+        r".+?\n\s*\nInput.*?\n\s+.+?\n\s*\nProcess.*?\n\s+.+?\n\s*\nOutput.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -158,8 +158,8 @@ def test_assignment_3_activity_3_program_plan_input():
         "Assignment 3",
         "Activity 3",
         "txt",
-        r"Input:.*?miles.*?Process:",
-        "Program plan Input: section missing or incorrect. Expected miles")
+        r"Input.*?miles.*?Process",
+        "Program plan Input section missing or incorrect. Expected miles")
 
 
 def test_assignment_3_activity_3_program_plan_process():
@@ -167,8 +167,8 @@ def test_assignment_3_activity_3_program_plan_process():
         "Assignment 3",
         "Activity 3",
         "txt",
-        r"Process:.*?(yards|kilometers).+?(feet|meters).+?(inches|centimeters).+?Output",
-        "Program plan Process: section missing or incorrect. "
+        r"Process.*?(yards|kilometers).+?(feet|meters).+?(inches|centimeters).+?Output",
+        "Program plan Process section missing or incorrect. "
             "Expected yards, feet, and inches or kilimeters, meters, and centimeters.")
 
 
@@ -177,8 +177,8 @@ def test_assignment_3_activity_3_program_plan_output():
         "Assignment 3",
         "Activity 3",
         "txt",
-        r"Output:.*?(yards|kilometers).+?(feet|meters).+?(inches|centimeters)",
-        "Program plan Output: section missing or incorrect. "
+        r"Output.*?(yards|kilometers).+?(feet|meters).+?(inches|centimeters)",
+        "Program plan Output section missing or incorrect. "
             "Expected yards, feet, and inches or kilimeters, meters, and centimeters.")
 
 
@@ -187,15 +187,15 @@ def test_assignment_3_activity_4_program_plan_structure():
         "Assignment 3",
         "Activity 4",
         "txt",
-        r".+?\nInput:.+?Process:.+?Output:",
+        r".+?\nInput.+?Process.+?Output",
         "Program plan structure doesn't match rquirements. "
-            "Check for introduction, Input:, Process:, and Output:.")
+            "Check for introduction, Input, Process, and Output.")
 
     test.check_file_contains(
         "Assignment 3",
         "Activity 4",
         "txt",
-        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
+        r".+?\n\s*\nInput.*?\n\s+.+?\n\s*\nProcess.*?\n\s+.+?\n\s*\nOutput.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -214,8 +214,8 @@ def test_assignment_3_activity_4_program_plan_input():
         "Assignment 3",
         "Activity 4",
         "txt",
-        r"Input:.*?(length|base|radius).*?Process:",
-        "Program plan Input: section missing or incorrect. "
+        r"Input.*?(length|base|radius).*?Process",
+        "Program plan Input section missing or incorrect. "
             "Expected length, base, or radius")
 
 
@@ -224,8 +224,8 @@ def test_assignment_3_activity_4_program_plan_process():
         "Assignment 3",
         "Activity 4",
         "txt",
-        r"Process:.*?area.+?Output",
-        "Program plan Process: section missing or incorrect. Expected area.")
+        r"Process.*?area.+?Output",
+        "Program plan Process section missing or incorrect. Expected area.")
 
 
 def test_assignment_3_activity_4_program_plan_output():
@@ -233,8 +233,8 @@ def test_assignment_3_activity_4_program_plan_output():
         "Assignment 3",
         "Activity 4",
         "txt",
-        r"Output:.*?area",
-        "Program plan Output: section missing or incorrect. Expected area.")
+        r"Output.*?area",
+        "Program plan Output section missing or incorrect. Expected area.")
 
 
 def test_assignment_3_activity_5_program_plan_structure():
@@ -242,15 +242,15 @@ def test_assignment_3_activity_5_program_plan_structure():
         "Assignment 3",
         "Activity 5",
         "txt",
-        r".+?\nInput:.+?Process:.+?Output:",
+        r".+?\nInput.+?Process.+?Output",
         "Program plan structure doesn't match rquirements. "
-            "Check for introduction, Input:, Process:, and Output:.")
+            "Check for introduction, Input, Process, and Output.")
 
     test.check_file_contains(
         "Assignment 3",
         "Activity 5",
         "txt",
-        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
+        r".+?\n\s*\nInput.*?\n\s+.+?\n\s*\nProcess.*?\n\s+.+?\n\s*\nOutput.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -269,8 +269,8 @@ def test_assignment_3_activity_5_program_plan_input():
         "Assignment 3",
         "Activity 5",
         "txt",
-        r"Input:.*?length.*?width.+?Process:",
-        "Program plan Input: section missing or incorrect. "
+        r"Input.*?length.*?width.+?Process",
+        "Program plan Input section missing or incorrect. "
             "Expected length and width")
 
 
@@ -279,8 +279,8 @@ def test_assignment_3_activity_5_program_plan_process():
         "Assignment 3",
         "Activity 5",
         "txt",
-        r"Process:.*?area.+?Output",
-        "Program plan Process: section missing or incorrect. Expected area.")
+        r"Process.*?area.+?Output",
+        "Program plan Process section missing or incorrect. Expected area.")
 
 
 def test_assignment_3_activity_5_program_plan_output():
@@ -288,8 +288,8 @@ def test_assignment_3_activity_5_program_plan_output():
         "Assignment 3",
         "Activity 5",
         "txt",
-        r"Output:.*?area",
-        "Program plan Output: section missing or incorrect. Expected area.")
+        r"Output.*?area",
+        "Program plan Output section missing or incorrect. Expected area.")
 
 
 def test_assignment_3_activity_6_program_plan_structure():
@@ -297,15 +297,15 @@ def test_assignment_3_activity_6_program_plan_structure():
         "Assignment 3",
         "Activity 6",
         "txt",
-        r".+?\nInput:.+?Process:.+?Output:",
+        r".+?\nInput.+?Process.+?Output",
         "Program plan structure doesn't match rquirements. "
-            "Check for introduction, Input:, Process:, and Output:.")
+            "Check for introduction, Input, Process, and Output.")
 
     test.check_file_contains(
         "Assignment 3",
         "Activity 6",
         "txt",
-        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
+        r".+?\n\s*\nInput.*?\n\s+.+?\n\s*\nProcess.*?\n\s+.+?\n\s*\nOutput.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -324,8 +324,8 @@ def test_assignment_3_activity_6_program_plan_input():
         "Assignment 3",
         "Activity 6",
         "txt",
-        r"Input:.*?length.*?width.+?height.+?(price|cost).+?feet.+?Process:",
-        "Program plan Input: section missing or incorrect. "
+        r"Input.*?length.*?width.+?height.+?(price|cost).+?feet.+?Process",
+        "Program plan Input section missing or incorrect. "
             "Expected length, width, height, pric3e, and feet.")
 
 
@@ -334,8 +334,8 @@ def test_assignment_3_activity_6_program_plan_process():
         "Assignment 3",
         "Activity 6",
         "txt",
-        r"Process:.*?gallons.+?cost.+?Output",
-        "Program plan Process: section missing or incorrect. "
+        r"Process.*?gallons.+?cost.+?Output",
+        "Program plan Process section missing or incorrect. "
             "Expected gallons and cost.")
 
 
@@ -344,8 +344,8 @@ def test_assignment_3_activity_6_program_plan_output():
         "Assignment 3",
         "Activity 6",
         "txt",
-        r"Output:.*?gallons.+?cost",
-        "Program plan Output: section missing or incorrect. "
+        r"Output.*?gallons.+?cost",
+        "Program plan Output section missing or incorrect. "
             "Expected gallons and cost.")
 
 
@@ -354,15 +354,15 @@ def test_assignment_3_activity_7_program_plan_structure():
         "Assignment 3",
         "Activity 7",
         "txt",
-        r".+?\nInput:.+?Process:.+?Output:",
+        r".+?\nInput.+?Process.+?Output",
         "Program plan structure doesn't match rquirements. "
-            "Check for introduction, Input:, Process:, and Output:.")
+            "Check for introduction, Input, Process, and Output.")
 
     test.check_file_contains(
         "Assignment 3",
         "Activity 7",
         "txt",
-        r".+?\n\s*\nInput:.*?\n\s+.+?\n\s*\nProcess:.*?\n\s+.+?\n\s*\nOutput:.*?\n\s+.+",
+        r".+?\n\s*\nInput.*?\n\s+.+?\n\s*\nProcess.*?\n\s+.+?\n\s*\nOutput.*?\n\s+.+",
         "Program plan formatting doesn't match example. "
             "Check blank lines, spacing, and indenting.")
 
@@ -381,8 +381,8 @@ def test_assignment_3_activity_7_program_plan_input():
         "Assignment 3",
         "Activity 7",
         "txt",
-        r"Input:.*?name.*?age.+?Process:",
-        "Program plan Input: section missing or incorrect. "
+        r"Input.*?name.*?age.+?Process",
+        "Program plan Input section missing or incorrect. "
             "Expected length, width, height, pric3e, and feet.")
 
 
@@ -391,8 +391,8 @@ def test_assignment_3_activity_7_program_plan_process():
         "Assignment 3",
         "Activity 7",
         "txt",
-        r"Process:.*?age.+?Output",
-        "Program plan Process: section missing or incorrect. "
+        r"Process.*?age.+?Output",
+        "Program plan Process section missing or incorrect. "
             "Expected gallons and cost.")
 
 
@@ -401,8 +401,8 @@ def test_assignment_3_activity_7_program_plan_output():
         "Assignment 3",
         "Activity 7",
         "txt",
-        r"Output:.*?name.+?age",
-        "Program plan Output: section missing or incorrect. "
+        r"Output.*?name.+?age",
+        "Program plan Output section missing or incorrect. "
             "Expected name and age.")
 
 
@@ -489,7 +489,7 @@ def test_assignment_3_activity_1_input_labels():
         "Activity 1",
         "",
         "10\n15\n",
-        "hours.*?\n?.*?(rate|per hour|hourly)",
+        "hours.*?\n?.*?(rate|per hour|hourly|wage)",
         "Input label(s) missing or incorrect. "
             "Expecting hours and rate.")
 
@@ -1477,7 +1477,7 @@ def test_assignment_3_activity_7_flowgorithm_comments():
 
 
 def test_assignment_3_activity_7_flowgorithm_variables():
-    test.check_flowgorithm_variables("Assignment 3", "Activity 7", 3)
+    test.check_flowgorithm_variables("Assignment 3", "Activity 7", 2)
 
 
 def test_assignment_3_activity_7_flowgorithm_inputs():
