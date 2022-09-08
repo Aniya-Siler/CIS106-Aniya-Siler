@@ -1,4 +1,4 @@
-Introduction: This Program converts an input Miles to Yards, Feet, and Inches.
+Introduction: This Program converts an input distance in Miles to Yards, Feet, and Inches.
 
 Input:
     Display prompt
