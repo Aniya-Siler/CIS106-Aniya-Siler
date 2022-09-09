@@ -397,7 +397,7 @@ def test_assignment_4_activity_7_program_plan_process():
         "txt",
         r"Process.*?age.+?Output",
         "Program plan Process section missing or incorrect. "
-            "Expected gallons and cost.")
+            "Expected age.")
 
 
 def test_assignment_4_activity_7_program_plan_output():
