@@ -1,1 +1,12 @@
 This program will calculate the users pay weekly, monthly, and annualy(gross) based on calculations
+Input:
+"Enter Hours:"
+"Enter Rate:"
+Process:
+Pay = (Rate*Hours)
+Monthly = (Pay*52/12)
+Annual = (Pay*52)
+Output:
+Display Weekly Income
+Display Monthly Income
+Display Annual Income
