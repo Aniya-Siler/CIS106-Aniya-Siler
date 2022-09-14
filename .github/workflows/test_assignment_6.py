@@ -6,7 +6,7 @@ import test
 def test_assignment_6_folder_structure():
     test.check_assignment_folder_structure(
         "Assignment 6",
-        r"activity[ _]?#?\d\.(class|cs|java|js|lua|py)|"
+        r"activity[ _]?#?\d\.(class|cs|java|js|lua|py|txt)|"
         "package-lock.json|test.csproj")
 
 
@@ -15,7 +15,7 @@ def test_assignment_6_duplicate_activities():
 
 
 def test_assignment_6_required_source_code_files():
-    test.check_required_files("Assignment 6", "(cs|java|js|lua|py)", 2)
+    test.check_required_files("Assignment 6", "(cs|java|js|lua|py)", 1)
 
 
 def test_assignment_6_activity_1_source_code_comments():

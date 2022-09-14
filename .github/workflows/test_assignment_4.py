@@ -330,7 +330,7 @@ def test_assignment_4_activity_6_program_plan_input():
         "txt",
         r"Input.*?length.*?width.+?height.+?(price|cost).+?feet.+?Process",
         "Program plan Input section missing or incorrect. "
-            "Expected length, width, height, pric3e, and feet.")
+            "Expected length, width, height, price, and feet.")
 
 
 def test_assignment_4_activity_6_program_plan_process():
@@ -387,7 +387,7 @@ def test_assignment_4_activity_7_program_plan_input():
         "txt",
         r"Input.*?name.*?age.+?Process",
         "Program plan Input section missing or incorrect. "
-            "Expected length, width, height, pric3e, and feet.")
+            "Expected name and age.")
 
 
 def test_assignment_4_activity_7_program_plan_process():
