@@ -8,7 +8,7 @@ Input:
     Get Rate
 
 Process:
-    Pay = Hours * Rate
+    Weekly Pay = Hours * Rate
     Monthly = Pay * 52 / 12
     Annual = Pay * 52
 
