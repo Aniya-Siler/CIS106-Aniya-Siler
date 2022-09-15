@@ -6,11 +6,11 @@ hours = float(input())
 print("Enter rate per hr:")
 rate = float(input())
 
-weekly = (hours*rate)
+weekly = (hours * rate)
 
-monthly = (weekly*52)/12
+monthly = (weekly * 52) /12
 
-annual = (weekly*52)
+annual = (weekly * 52)
 
 print("Weekly income is" + str(weekly))
 print("Monthly income is" + str(monthly))
