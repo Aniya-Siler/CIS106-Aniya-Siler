@@ -8,7 +8,7 @@ rate = float(input())
 
 weekly = (hours*rate)
 
-monthly = (weekly*52) /12
+monthly = (weekly*52)/12
 
 annual = (weekly*52)
 
