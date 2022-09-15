@@ -1,10 +1,10 @@
 # This program prompts user for hours worked and calculates the rate per hour, weekly, monthly, and annual (gross) pay
 
 print("Enter hours worked:")
-hours = float(input())
+/ hours = float(input())
 
 print("Enter rate per hr:")
-rate = float(input())
+/ rate = float(input())
 
 weekly = (hours * rate)
 
