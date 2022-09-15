@@ -16,4 +16,4 @@ print("Weekly income is" + str(weekly))
 print("Monthly income is" + str(monthly))
 print("Annual income is" + str(annual))
       
-# Refences I used were the Programming Fundamentals book (Data and Operations) I also used google to search up the specific calculations.
+# Refences I used were the Programming Fundamentals book,Data and Operations. I also used google to search up the specific calculations.
