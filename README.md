@@ -10,3 +10,6 @@ The programming language that I selected was Python and I will use Thonny as the
 I learned a lot throughout this session. I learned how to problem solve, apply what I learned, and Plan, and with all that I learned, I created a program. The program that I created is able to convert Miles into yards, feet, and inches. I can apply this to my world by making different types of programs that I may use, for instance, I noticed one of the program activities was an age calculator. I often search for my exact age on google, it would be so much more rewarding if I could just use my own program that I created.
 
 ## Assignment 4
+During this programming session, I learned how to use the resources given to me and apply them. It was difficult for me at first to understand the assignment but once I understood it, It was quite simple. The Programming Fundamentals book “Data and Operators” and specifically the section, on Python examples really helped me. I would use what I learned in the section in the future to backtrack and really understand the material. I would also use this in the future to help my classmates when in need and apply it to other things that I want to/ have to program.
+
+## Assignment 5
