@@ -1,4 +1,7 @@
-# This program calculates the rate per hour, weekly, monthly, & annual pay
+# This program calculates the rate per hour, weekly, monthly, & annual pay.
+
+# References:
+#   References go here ...
 
 print("Enter hours worked:")
 hours = float(input())
@@ -6,12 +9,10 @@ hours = float(input())
 print("Enter rate per hr:")
 rate = float(input())
 
-weekly = (hours * rate)
+weekly = hours * rate
+monthly = weekly * 52 / 12
+annual = weekly * 52
 
-monthly = (weekly * 52) / 12
-
-annual = (weekly * 52)
-
-print("Weekly income is" + str(weekly))
-print("Monthly income is" + str(monthly))
-print("Annual income is" + str(annual))
+print("Weekly income is " + str(weekly))
+print("Monthly income is " + str(monthly))
+print("Annual income is " + str(annual))
