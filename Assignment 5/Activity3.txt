@@ -1,0 +1,50 @@
+ Main Program
+ GetMiles
+ CalculateYard
+ CalculateFeet
+ CalculateInches
+ Display Result
+ 
+ Get Miles
+ Parameters:
+ None
+ Process:
+ Display Prompt
+ Get Miles
+ Return Value:
+ Miles
+ 
+ CalculateYard
+ Paameters:
+ Miles
+ Process:
+ Convert Miles to Yard
+ Return Value:
+ Yard
+ 
+ CalculateFeet
+ Parameters:
+ Miles
+ Process:
+ Convert Miles to Feet
+ Return Value:
+ Feet
+ 
+ CalculateInches
+ Parameters:
+ Miles
+ Process:
+ Convert Miles to Inches
+ Return Value:
+ Inches
+ 
+ Display Result
+ Parameters:
+ Miles
+ Yard
+ Feet
+ Inches
+ Process:
+ Display Miles, Yard, Feet, Inches
+ Return Value:
+ None
