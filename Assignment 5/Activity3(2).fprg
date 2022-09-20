@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cash america"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-20 01:02:02 PM"/>
+        <attribute name="created" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMDktMjA7MTI6MTM6MjIgUE07MzUxNw=="/>
+        <attribute name="edited" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMDktMjA7MDE6MDI6MDIgUE07MjszNjIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program asks the user for amount of Miles,"/>
+            <comment text="Converts the given amount to Yards, Feet, Inches,"/>
+            <comment text="and displays the results."/>
+            <declare name="Miles" type="Real" array="False" size=""/>
+            <declare name="Yard" type="Real" array="False" size=""/>
+            <declare name="Feet" type="Real" array="False" size=""/>
+            <declare name="Inches" type="Real" array="False" size=""/>
+            <assign variable="Miles" expression="GetMiles ()"/>
+            <assign variable="Yard" expression="CalculateYard(Miles)"/>
+            <assign variable="Feet" expression="CalculateFeet(Miles)"/>
+            <assign variable="Inches" expression="CalculateInches(Miles)"/>
+            <call expression="DisplayResult(Miles,Yard,Feet,Inches)"/>
+        </body>
+    </function>
+    <function name="CalculateFeet" type="Real" variable="Feet">
+        <parameters>
+            <parameter name="Miles" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Feet" type="Real" array="False" size=""/>
+            <assign variable="Feet" expression="(Miles * 5280.019685)"/>
+        </body>
+    </function>
+    <function name="CalculateInches" type="Real" variable="Inches">
+        <parameters>
+            <parameter name="Miles" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Inches" type="Real" array="False" size=""/>
+            <assign variable="Inches" expression="(Miles * 63360.23622)"/>
+        </body>
+    </function>
+    <function name="CalculateYard" type="Real" variable="Yard">
+        <parameters>
+            <parameter name="Miles" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Yard" type="Real" array="False" size=""/>
+            <assign variable="Yard" expression="(Miles * 1760.0065617)"/>
+        </body>
+    </function>
+    <function name="DisplayResult" type="None" variable="">
+        <parameters>
+            <parameter name="Miles" type="Real" array="False"/>
+            <parameter name="Yard" type="Real" array="False"/>
+            <parameter name="Feet" type="Real" array="False"/>
+            <parameter name="Inches" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;The Distance in Yards is&quot; &amp; Yard &amp; &quot;yds&quot;" newline="True"/>
+            <output expression="&quot;The Distance in Feet is&quot; &amp; Feet &amp; &quot;ft&quot;" newline="True"/>
+            <output expression="&quot;The Distance in Inches is&quot; &amp; Inches &amp; &quot;Ins&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="GetMiles" type="Real" variable="Miles">
+        <parameters/>
+        <body>
+            <declare name="Miles" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter amount of Miles.&quot;" newline="True"/>
+            <input variable="Miles"/>
+        </body>
+    </function>
+</flowgorithm>
