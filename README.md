@@ -13,3 +13,7 @@ I learned a lot throughout this session. I learned how to problem solve, apply w
 During this programming session, I learned how to use the resources given to me and apply them. It was difficult for me at first to understand the assignment but once I understood it, It was quite simple. The Programming Fundamentals book “Data and Operators” and specifically the section, on Python examples really helped me. I would use what I learned in the section in the future to backtrack and really understand the material. I would also use this in the future to help my classmates when in need and apply it to other things that I want to/ have to program.
 
 ## Assignment 5
+Our assignment for session 5 covered a number of topics, including parameters, functions, return variables, and so on. It took me a little while to get used to the vocabulary words and all these unfamiliar terms that were being used in the Programming Fundamentals book. I am the type of learner who learns as I proceed, and as I progressed in the assignment I started understanding. When I saw everything right in front of me, it really helped me to make sense of it all. As a result of my experience, I will be able to use what I have learned in the future for assignments, my career, and my college career.
+
+## Assignment 6
+
