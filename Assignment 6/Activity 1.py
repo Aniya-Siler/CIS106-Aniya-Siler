@@ -14,7 +14,7 @@ def get_hours():
 def get_rate():
      print("Enter rate per hour:")
      rate = float(input())
-     return hours
+     return rate
          
          
 def calculate_weekly(rate, hours):
