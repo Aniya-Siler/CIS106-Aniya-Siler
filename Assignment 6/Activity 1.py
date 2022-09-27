@@ -24,8 +24,7 @@ def calculate_weekly(rate, hours):
                
 def calculate_monthly(weekly):
         monthly = (Weekly * 52 / 12)
-        return annual
-
+        return monthly
 
 def calculate_annual(weekly):
         annual = (weekly * 52)
