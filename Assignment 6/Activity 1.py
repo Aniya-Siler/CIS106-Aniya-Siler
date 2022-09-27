@@ -6,26 +6,26 @@
 # https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/python-examples-3/
 
 def get_hours():
-  print("Enter amount hours worked:")
-  hours = float(input())
-  return hours
+ 	print("Enter amount hours worked:")
+  	hours = float(input())
+  	return hours
                 
 def get_rate():
-  print("Enter rate per hr:")
-  rate = float(input())
-  return rate
+  	print("Enter rate per hr:")
+  	rate = float(input())
+  	return rate
                
 def calculate_weekly(rate, hours):
-  weekly = (rate * hours)
-  return weekly
+  	weekly = (rate * hours)
+ 	return weekly
                
 def calculate_monthly(weekly):
-  monthly = (Weekly * 52 / 12)
-  return annual
+ 	monthly = (Weekly * 52 / 12)
+  	return annual
 
 def calculate_annual(weekly):
-  annual = (weekly * 52)
-  return annual
+  	annual = (weekly * 52)
+  	return annual
                
 def display_result(weekly, monthly, annual):
 	print(str("Weekly income is " & weekly))
