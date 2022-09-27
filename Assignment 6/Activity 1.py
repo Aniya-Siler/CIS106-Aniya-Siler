@@ -42,4 +42,4 @@ def main():
            rate = get_rate()
            display_result(weekly, monthly, annual)
            
-           main()
+main()
