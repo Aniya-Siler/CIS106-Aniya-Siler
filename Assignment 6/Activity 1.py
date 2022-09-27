@@ -28,7 +28,7 @@ def calculate_annual(weekly):
   	return annual
                
 def display_result(weekly, monthly, annual):
-	print(str("Weekly income is " & weekly))
+        print(str("Weekly income is " & weekly))
 	print(str("Monthly income is " & monthly))
 	print(str("Annual income is " & annual))
  
