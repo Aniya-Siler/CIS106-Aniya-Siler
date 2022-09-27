@@ -14,6 +14,10 @@ def test_assignment_6_duplicate_activities():
     test.check_duplicate_activities("Assignment 5", "Assignment 6")
 
 
+def test_assignment_6_required_program_plan_files():
+    test.check_required_files("Assignment 6", "txt", 1)
+
+
 def test_assignment_6_required_source_code_files():
     test.check_required_files("Assignment 6", "(cs|java|js|lua|py)", 1)
 
