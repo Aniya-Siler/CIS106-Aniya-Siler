@@ -1,0 +1,36 @@
+This program asks the user for amount of hours,
+Calculates the users, weekly, monthly, and annual pay,
+and displays the results.
+
+Main Program
+Get Hours
+Get rate
+Display Result
+
+Get Hours
+Parameters: None
+Process:
+"Enter Hours worked"
+Get Hours
+Return Value:
+Hours
+
+Get Rate
+Parameters: None
+Process:
+"Enter rate per hr"
+Get Rate
+Return Value:
+Rate
+
+Calculate Weekly
+Parameters: Hours, Rate
+Calculate Weekly
+Return Value:
+Weekly
+
+Display Result
+Parameters: Weekly, Monthly, Annual
+Process:
+Display Weekly, Monthly, Annual results
+Return Value: None
