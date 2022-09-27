@@ -7,7 +7,7 @@
 
 def get_hours():
         print("Enter amount of hours worked:")
-        hours = float(input))
+        hours = float(input())
         return hours
         
         
