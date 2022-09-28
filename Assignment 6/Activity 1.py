@@ -20,7 +20,8 @@ def get_rate():
 def calculate_weekly(rate, hours):
     weekly = (rate * hours)
     return weekly
-         
+   
+    
 def calculate_monthly(weekly):
     monthly = (weekly * 52 / 12)
     return monthly
@@ -44,5 +45,6 @@ def main():
     monthly = calculate_monthly(weekly)
     annual = calculate_annual(weekly)
     display_result(weekly, monthly, annual)
-           
+ 
+
 main()
