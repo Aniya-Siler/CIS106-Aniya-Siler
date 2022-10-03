@@ -1,0 +1,58 @@
+This program asks the user to select miles, yards, feet, or inches and input a given measurment. Then the program converts the given measurement and displays the result.
+
+Main Program
+Get Choice
+Either:
+Get Yards
+Calculate Feet
+Display Result
+
+Or:
+Get Feet
+Calculate Yard
+Display Result
+
+Get Choice
+Parameters:
+None
+Process:
+Display Prompt
+Get Choice of Yards or Feet conversion
+Return Value:
+Choice
+
+Get Measurment
+Parameters:
+Label (Yards or Feet)
+Process:
+Display Prompt with label
+Get Measurment
+Return Value:
+Measurment
+
+Calculate Yard
+Parameters:
+Feet Measurment
+Process:
+Convert Feet Measurment to Yard
+Return Value:
+Yard Measurment
+
+Calculate Feet
+Parameters:
+Yard Measurment
+Process:
+Convert Yard measurment to Feet
+Return Value:
+Feet Measurment
+
+Display Result
+Parameters:
+Input Measurment
+From Label (Yards or Feet)
+Output Measurment
+To label (Yards or feet)
+Process:
+Display Measurments and labels
+Return Value:
+None
