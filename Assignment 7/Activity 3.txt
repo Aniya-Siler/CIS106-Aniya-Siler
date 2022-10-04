@@ -1,15 +1,26 @@
-This program asks the user to select miles, yards, feet, or inches and input a given measurment. Then the program converts the given measurement and displays the result.
+This program asks the user to select miles, yards, feet, and inches and input a given measurment. Then the program converts the given measurement and displays the result.
 
 Main Program
 Get Choice
+
 Either:
 Get Yards
-Calculate Feet
+Calculate Miles, Feet, and Inches
 Display Result
 
 Or:
 Get Feet
-Calculate Yard
+Calculate Miles, Yard, and Inches
+Display Result
+
+Or:
+Get Miles
+Calculate Yard, Feet, and Inches
+Display Result
+
+Or:
+Get Inches
+Calculate Miles, Yard, and Feet
 Display Result
 
 Get Choice
@@ -17,13 +28,13 @@ Parameters:
 None
 Process:
 Display Prompt
-Get Choice of Yards or Feet conversion
+Get Choice of Miles, Yards, Feet, and Inches conversion
 Return Value:
 Choice
 
 Get Measurment
 Parameters:
-Label (Yards or Feet)
+Label (Miles, Yards, Feet, and Inches)
 Process:
 Display Prompt with label
 Get Measurment
@@ -33,25 +44,49 @@ Measurment
 Calculate Yard
 Parameters:
 Feet Measurment
+Miles Measurment
+Inches Measurment
 Process:
-Convert Feet Measurment to Yard
+Convert Feet, Miles, and Inches Measurment to Yard
 Return Value:
 Yard Measurment
 
 Calculate Feet
 Parameters:
 Yard Measurment
+Miles Measurment
+Inches Measurment
 Process:
-Convert Yard measurment to Feet
+Convert Yard, Miles, and Inches measurment to Measurment to Feet
 Return Value:
 Feet Measurment
+
+Calculate Miles
+Parameters:
+Yard Measurment
+Feet Measurment
+Inches Measurment
+Process:
+Convert Yard, Feet, and Inches measurment to Measurment to Miles
+Return Value:
+Miles Measurment
+
+Calculate Inches
+Parameters:
+Yard Measurment
+Miles Measurment
+Feet Measurment
+Process:
+Convert Yard, Feet, and Miles measurment to Measurment to Inches
+Return Value:
+Inches Measurment
 
 Display Result
 Parameters:
 Input Measurment
-From Label (Yards or Feet)
+From Label (Miles, Yards, Feet, and Inches)
 Output Measurment
-To label (Yards or feet)
+To label Miles, Yards, Feet, and Inches)
 Process:
 Display Measurments and labels
 Return Value:
