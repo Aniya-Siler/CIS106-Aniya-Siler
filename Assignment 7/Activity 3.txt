@@ -1,60 +1,106 @@
-This program asks the user to select US (miles, yards, feet, and inches) or Metric (kilometers, meters, and centimeters) and input a given measurment. Then the program converts the given measurement and displays the result.
+This program asks the user to select miles, yards, feet, and inches and input a given measurment. Then the program converts the given measurement and displays the result.
 
 Main Program
+    Get Miles
     Get Choice
+
     Either:
-         Get US measurment
-         Calculate Metric
-         Display Result
-Or:
-    Get Metric measurment
-    Calculate US
-    Display Result
-    
-    
+        Calculate Yards
+        Calculate Feet
+        Calculate Inches
+        Display US
+    Or:
+        Calculate Kilometers
+        Calculate Meters
+        Calculate Centimeters
+        Display metric
+    Or:
+        Display error message
+
 Get Choice
     Parameters:
-    None
+        None
     Process:
-    Display prompt
-    Get choice of Us or Metric conversion
+        Display Prompt
+        Get Choice of US or metric
     Return Value:
-    Choice
-    
-    
-Get Tempature
+        Choice
+
+Get Miles
     Parameters:
-        Label(US or Metric)
+        None
     Process:
-        Display prompt with label
-        Get Measurment
+        Display Prompt
+        Get Miles
     Return Value:
-        Measurment
-        
-Calculate US
+        Miles
+
+Calculate Yards
     Parameters:
-        Metric measurment
+        Miles
     Process:
-        Convert Metric measurment to US
+        Convert Miles to Yards
     Return Value:
-    US measurment
-    
-Calculate Metric
+        Yards
+
+Calculate Feet
     Parameters:
-        US measurment
+        Miles
     Process:
-        Convert US measurment to Metric
+        Convert Miles to Feet
     Return Value:
-        Metric measurment
-        
-        
-Display Result
+        Feet
+
+Calculate Inches
     Parameters:
-        Input measurment
-        From label (US or Metric)
-        Output measurment
+        Miles
+    Process:    
+        Convert Miles to Inches
+    Return Value:
+        Inches
+
+Calculate Kilometers
+    Parameters:
+        Miles
+    Process:    
+        Convert Miles to Kilometers
+    Return Value:
+        Kilometers
+
+Calculate Meters
+    Parameters:
+        Miles
+    Process:    
+        Convert Miles to Meters
+    Return Value:
+        Meters
+
+Calculate Centimeters
+    Parameters:
+        Miles
+    Process:    
+        Convert Miles to Centimeters
+    Return Value:
+        Centimeters
+
+Display US
+    Parameters:
+        Miles
+        Yards
+        Feet
+        Inches
     Process:
-        Display measurment and labels
+        Display Measurments and labels
     Return Value:
         None
-    
+
+Display Metric
+    Parameters:
+        Miles
+        Kilometers
+        Meters
+        Centimeters
+    Process:
+        Display Measurments and labels
+    Return Value:
+        None
