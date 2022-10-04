@@ -1,93 +1,106 @@
 This program asks the user to select miles, yards, feet, and inches and input a given measurment. Then the program converts the given measurement and displays the result.
 
 Main Program
+    Get Miles
+    Get Choice
+
+    Either:
+        Calculate Yards
+        Calculate Feet
+        Calculate Inches
+        Display US
+    Or:
+        Calculate Kilometers
+        Calculate Meters
+        Calculate Centimeters
+        Display metric
+    Or:
+        Display error message
+
 Get Choice
+    Parameters:
+        None
+    Process:
+        Display Prompt
+        Get Choice of US or metric
+    Return Value:
+        Choice
 
-Either:
-Get Yards
-Calculate Miles, Feet, and Inches
-Display Result
-
-Or:
-Get Feet
-Calculate Miles, Yard, and Inches
-Display Result
-
-Or:
 Get Miles
-Calculate Yard, Feet, and Inches
-Display Result
+    Parameters:
+        None
+    Process:
+        Display Prompt
+        Get Miles
+    Return Value:
+        Miles
 
-Or:
-Get Inches
-Calculate Miles, Yard, and Feet
-Display Result
-
-Get Choice
-Parameters:
-None
-Process:
-Display Prompt
-Get Choice of Miles, Yards, Feet, and Inches conversion
-Return Value:
-Choice
-
-Get Measurment
-Parameters:
-Label (Miles, Yards, Feet, and Inches)
-Process:
-Display Prompt with label
-Get Measurment
-Return Value:
-Measurment
-
-Calculate Yard
-Parameters:
-Feet Measurment
-Miles Measurment
-Inches Measurment
-Process:
-Convert Feet, Miles, and Inches Measurment to Yard
-Return Value:
-Yard Measurment
+Calculate Yards
+    Parameters:
+        Miles
+    Process:
+        Convert Miles to Yards
+    Return Value:
+        Yards
 
 Calculate Feet
-Parameters:
-Yard Measurment
-Miles Measurment
-Inches Measurment
-Process:
-Convert Yard, Miles, and Inches measurment to Measurment to Feet
-Return Value:
-Feet Measurment
-
-Calculate Miles
-Parameters:
-Yard Measurment
-Feet Measurment
-Inches Measurment
-Process:
-Convert Yard, Feet, and Inches measurment to Measurment to Miles
-Return Value:
-Miles Measurment
+    Parameters:
+        Miles
+    Process:
+        Convert Miles to Feet
+    Return Value:
+        Feet
 
 Calculate Inches
-Parameters:
-Yard Measurment
-Miles Measurment
-Feet Measurment
-Process:
-Convert Yard, Feet, and Miles measurment to Measurment to Inches
-Return Value:
-Inches Measurment
+    Parameters:
+        Miles
+    Process:    
+        Convert Miles to Inches
+    Return Value:
+        Inches
 
-Display Result
-Parameters:
-Input Measurment
-From Label (Miles, Yards, Feet, and Inches)
-Output Measurment
-To label Miles, Yards, Feet, and Inches)
-Process:
-Display Measurments and labels
-Return Value:
-None
+Calculate Kilometers
+    Parameters:
+        Miles
+    Process:    
+        Convert Miles to Kilometers
+    Return Value:
+        Kilometers
+
+Calculate Meters
+    Parameters:
+        Miles
+    Process:    
+        Convert Miles to Meters
+    Return Value:
+        Meters
+
+Calculate Centimeters
+    Parameters:
+        Miles
+    Process:    
+        Convert Miles to Centimeters
+    Return Value:
+        Centimeters
+
+Display US
+    Parameters:
+        Miles
+        Yards
+        Feet
+        Inches
+    Process:
+        Display Measurments and labels
+    Return Value:
+        None
+
+Display Metric
+    Parameters:
+        Miles
+        Kilometers
+        Meters
+        Centimeters
+    Process:
+        Display Measurments and labels
+    Return Value:
+        None
