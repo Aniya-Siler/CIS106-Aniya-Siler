@@ -1,8 +1,10 @@
 This program asks the user to select miles, yards, feet, and inches and input a given measurment. Then the program converts the given measurement and displays the result.
 
+
 Main Program
     Get Miles
     Get Choice
+
 
     Either:
         Calculate Yards
@@ -17,6 +19,7 @@ Main Program
     Or:
         Display error message
 
+
 Get Choice
     Parameters:
         None
@@ -25,6 +28,7 @@ Get Choice
         Get Choice of US or metric
     Return Value:
         Choice
+
 
 Get Miles
     Parameters:
@@ -35,6 +39,7 @@ Get Miles
     Return Value:
         Miles
 
+
 Calculate Yards
     Parameters:
         Miles
@@ -42,6 +47,7 @@ Calculate Yards
         Convert Miles to Yards
     Return Value:
         Yards
+
 
 Calculate Feet
     Parameters:
@@ -51,6 +57,7 @@ Calculate Feet
     Return Value:
         Feet
 
+
 Calculate Inches
     Parameters:
         Miles
@@ -58,6 +65,7 @@ Calculate Inches
         Convert Miles to Inches
     Return Value:
         Inches
+
 
 Calculate Kilometers
     Parameters:
@@ -67,6 +75,7 @@ Calculate Kilometers
     Return Value:
         Kilometers
 
+
 Calculate Meters
     Parameters:
         Miles
@@ -75,6 +84,7 @@ Calculate Meters
     Return Value:
         Meters
 
+
 Calculate Centimeters
     Parameters:
         Miles
@@ -82,6 +92,7 @@ Calculate Centimeters
         Convert Miles to Centimeters
     Return Value:
         Centimeters
+
 
 Display US
     Parameters:
@@ -93,6 +104,7 @@ Display US
         Display Measurments and labels
     Return Value:
         None
+
 
 Display Metric
     Parameters:
