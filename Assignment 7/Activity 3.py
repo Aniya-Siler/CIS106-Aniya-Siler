@@ -1,15 +1,16 @@
 def calculateCenti(miles):
     centi = miles * 160934
     
-    
     return centi
 
 def calculateFeet(miles):
+    
     feet = miles * 5280.019685
     
     return feet
 
 def calculateInches(miles):
+    
     inches = miles * 63360.23622
     
     return inches
@@ -83,6 +84,8 @@ def processUS(miles):
 # Ask the user to input distance in miles,
 # and ask if they would like to convert the distance to US or Metric.
 # Display Results.
+
+
 miles = getMiles()
 choice = getChoice()
 if choice == "Metric" or choice == "metric":
