@@ -24,7 +24,7 @@ def getMiles():
     
     return miles
 
-Main
+# Main
 # This program asks the user for amount of Miles,
 # Converts the given amount to Yards, Feet, Inches,
 # and displays the results.
