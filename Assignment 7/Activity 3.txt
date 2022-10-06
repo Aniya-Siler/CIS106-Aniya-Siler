@@ -1,4 +1,4 @@
-This program asks the user to select miles, yards, feet, and inches and input a given measurment. Then the program converts the given measurement and displays the result.
+This program asks the user to select US or Metric and input a given measurment. Then the program converts the given measurement and displays the result.
 
 
 Main Program
