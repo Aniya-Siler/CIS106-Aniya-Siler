@@ -1,6 +1,7 @@
 def calculateCenti(miles):
     centi = miles * 160934
     
+    
     return centi
 
 def calculateFeet(miles):
@@ -13,26 +14,32 @@ def calculateInches(miles):
     
     return inches
 
+
 def calculateKilo(miles):
     kilo = miles * 1.60934
     
     return kilo
+
 
 def calculateMeters(miles):
     meters = miles * 1609.34
     
     return meters
 
+
 def calculateUS(metric, yards, inches, feet, getMiles):
     pass
+
 
 def calculateYards(miles):
     yards = miles * 1760.0065617
     
     return yards
 
+
 def displayResult(result, label):
     print(str(result) + " " + label)
+
 
 def getChoice():
     print("Enter US to convert to US or Metric to convert to Metric:")
@@ -40,17 +47,20 @@ def getChoice():
     
     return choice
 
+
 def getMeasurment(scale):
     print("Enter" + scale + "Measurment:")
     measurment = float(input())
     
     return measurment
 
+
 def getMiles():
     print("Enter amount of Miles.")
     miles = float(input())
     
     return miles
+
 
 def processMetric(miles):
     result = calculateKilo(miles)
@@ -60,6 +70,7 @@ def processMetric(miles):
     result = calculateCenti(miles)
     displayResult(result, "Centimeters")
 
+    
 def processUS(miles):
     result = calculateYards(miles)
     displayResult(result, "Yards")
