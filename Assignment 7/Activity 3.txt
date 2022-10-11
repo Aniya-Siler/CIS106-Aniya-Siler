@@ -2,8 +2,9 @@ This program asks the user to select US or Metric and input a given measurment. 
 
 
 Main Program
-    Get Miles
-    Get Choice
+  Real Miles
+  String Choice
+  Get Choice
 
 
     Either:
@@ -93,26 +94,37 @@ Calculate Centimeters
     Return Value:
         Centimeters
 
-
-Display US
+Process Metric
     Parameters:
         Miles
-        Yards
-        Feet
-        Inches
     Process:
-        Display Measurments and labels
+        Result Kilometers
+        Display Kilometers
+        Result Meters
+        Display Kilometers
+        Result Centimeters
+        Display Centimeters
     Return Value:
         None
-
-
-Display Metric
+    
+Process US
     Parameters:
-        Miles
-        Kilometers
-        Meters
-        Centimeters
+    
     Process:
-        Display Measurments and labels
+        Result Yards
+        Display Yards
+        Result Miles
+        Display Miles
+        Result Inches
+        Display Inches
+    Return Value:
+        None
+    
+Display Result
+    Parameters:
+        Real Result, Sting Label
+    Process:
+        Output Result
+        Label
     Return Value:
         None
