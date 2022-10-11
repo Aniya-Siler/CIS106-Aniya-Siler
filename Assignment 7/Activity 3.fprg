@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
-<flowgorithm fileversion="3.0">
+<flowgorithm fileversion="2.11">
     <attributes>
         <attribute name="name" value=""/>
         <attribute name="authors" value="cash america"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-06 05:22:18 PM"/>
+        <attribute name="saved" value="2022-10-11 06:58:40 PM"/>
         <attribute name="created" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMTAtMDQ7MDE6MDQ6MTggUE07MzUxNA=="/>
         <attribute name="edited" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMTAtMDY7MDU6MjI6MTggUE07MzszNjMw"/>
+        <attribute name="edited" value="ZGF2ZWJyYXVuc2Nod2VpZztXSU5ET1dTMTE7MjAyMi0xMC0xMTswNjo1ODo0MCBQTTsyOzM3MzY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,6 +15,7 @@
             <comment text="Ask the user to input distance in miles,"/>
             <comment text="and ask if they would like to convert the distance to US or Metric."/>
             <comment text="Display Results."/>
+            <comment text="References:&#13;&#10;Go here ..."/>
             <declare name="Miles" type="Real" array="False" size=""/>
             <assign variable="Miles" expression="GetMiles()"/>
             <declare name="Choice" type="String" array="False" size=""/>
@@ -79,16 +81,6 @@
             <declare name="Meters" type="Real" array="False" size=""/>
             <assign variable="Meters" expression="(Miles * 1609.34)"/>
         </body>
-    </function>
-    <function name="CalculateUS" type="None" variable="">
-        <parameters>
-            <parameter name="Metric" type="Real" array="False"/>
-            <parameter name="Yards" type="Real" array="False"/>
-            <parameter name="Inches" type="Real" array="False"/>
-            <parameter name="Feet" type="Real" array="False"/>
-            <parameter name="GetMiles" type="Real" array="False"/>
-        </parameters>
-        <body/>
     </function>
     <function name="CalculateYards" type="Real" variable="Yards">
         <parameters>
