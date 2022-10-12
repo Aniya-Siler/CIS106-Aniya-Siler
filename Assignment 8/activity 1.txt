@@ -1,1 +1,26 @@
-
+Main Progam
+ Get starting value
+ Get ending value
+ Get increment value
+ Demonstrate for loop
+ 
+ Get value
+ Parameters:
+ label
+ Process:
+ Display prompt with label
+ Get Value
+ Return Value:
+ Value
+ 
+ Demonstrate for loop
+ Parameters:
+ Start
+ Stop
+ Increment
+ Process:
+ Inistalize count
+ Loop for counnt from start to stop by increment
+ Display
+ Return Value:
+ None
