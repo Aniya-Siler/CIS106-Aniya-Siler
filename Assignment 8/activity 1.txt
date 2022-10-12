@@ -8,22 +8,22 @@ Main Progam
  Demonstrate for loop
  
  Get value
- Parameters:
- label
- Process:
- Display prompt with label
- Get Value
- Return Value:
- Value
+     Parameters:
+       label
+     Process:
+       Display prompt with label
+       Get Value
+     Return Value:
+       Value
  
  Demonstrate for loop
- Parameters:
- Start
- Stop
- Increment
- Process:
- Initalize count
- Loop for count from start to stop by increment
- Display
- Return Value:
- None
+     Parameters:
+       Start
+       Stop
+       Increment
+     Process:
+       Initalize count
+       Loop for count from start to stop by increment
+         Display
+     Return Value:
+       None
