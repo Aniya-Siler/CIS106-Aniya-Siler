@@ -1,3 +1,5 @@
+#This program uses a loop to generate a list of multiplication expressions for a given value
+
 Main Progam
  Get starting value
  Get ending value
@@ -19,8 +21,8 @@ Main Progam
  Stop
  Increment
  Process:
- Inistalize count
- Loop for counnt from start to stop by increment
+ Initalize count
+ Loop for count from start to stop by increment
  Display
  Return Value:
  None
