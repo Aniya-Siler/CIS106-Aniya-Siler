@@ -1,29 +1,46 @@
-#This program uses a loop to generate a list of multiplication expressions for a given value
-
+# This program uses a loop to generate a list of
+# multiplication expressions for a given value.
 
 Main Progam
- Get starting value
- Get ending value
- Get increment value
- Demonstrate for loop
+    Get value
+    Get expression count
+    Process expressions
  
- Get value
-     Parameters:
-       label
-     Process:
-       Display prompt with label
+Get Value
+    Parameters:
+       None
+    Process:
+       Display prompt
        Get Value
-     Return Value:
+    Return Value:
        Value
  
- Demonstrate for loop
-     Parameters:
-       Start
-       Stop
-       Increment
-     Process:
-       Initalize count
-       Loop for count from start to stop by increment
-         Display
-     Return Value:
+Get Expression Count
+    Parameters:
        None
+    Process:
+       Display prompt
+       Get expression count
+    Return Value:
+       Expression count
+ 
+Process Expressions
+    Parameters:
+        Value
+        Expression count
+    Process:
+        Loop for count from 1 to expression count by 1
+            Calculate result
+            Display expression
+     Return Value:
+        None
+
+Display Expression
+    Parameters:
+        Value
+        Count
+        Result
+    Process:
+        Display expression
+    Return Value:
+        None
