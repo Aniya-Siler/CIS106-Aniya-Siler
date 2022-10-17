@@ -1,0 +1,39 @@
+# This program uses while loop to generate a list of
+# Multiplication expressions for a given value
+
+Main Program
+Get Value
+Get Expression Count
+
+Get Value
+    Parameters:
+      Name
+    Process:
+        Display Prompt
+        Get Value
+    Return Value:
+        Value
+        
+Process Expressions
+    Parameters:
+      Value
+      Expression Count
+    Process:
+        Count = 1
+        While loop count less than or equal to Expression count
+        Calculate Result
+        Assign count + 1
+        Assign Result + 1
+        Dispay Expression
+    Return Value:
+        None
+        
+Display Expression
+    Parameters:
+        Value
+        Count
+        Result
+    Process:
+        Display Expression
+    Return Value:
+        None
