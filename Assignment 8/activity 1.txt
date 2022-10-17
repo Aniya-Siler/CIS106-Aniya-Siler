@@ -15,15 +15,6 @@ Get Value
     Return Value:
        Value
  
-Get Expression Count
-    Parameters:
-       None
-    Process:
-       Display prompt
-       Get expression count
-    Return Value:
-       Expression count
- 
 Process Expressions
     Parameters:
         Value
