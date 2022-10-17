@@ -15,7 +15,7 @@ def processExpressions(value, expressioncount):
 # Main
 # This program uses a loop to generate a list of
 # mulitplication expressions for a given value
-# Refrences:
+# References:
 # https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/loop-examples/
 # https://www.youtube.com/watch?v=yaqMSBr_NCU&t=347s
 value = getValue("value")

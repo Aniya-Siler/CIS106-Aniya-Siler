@@ -13,7 +13,7 @@
         <body>
             <comment text="This program uses a loop to generate a list of"/>
             <comment text="mulitplication expressions for a given value"/>
-            <comment text="Refrences:"/>
+            <comment text="References:"/>
             <comment text="https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/loop-examples/"/>
             <comment text="https://www.youtube.com/watch?v=yaqMSBr_NCU&amp;t=347s"/>
             <declare name="value" type="Integer" array="False" size=""/>
