@@ -8,7 +8,7 @@ Main Progam
  
 Get Value
     Parameters:
-       None
+       Name
     Process:
        Display prompt
        Get Value
