@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cash america"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-17 05:36:14 PM"/>
+        <attribute name="created" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMTAtMTY7MDg6NDY6MzAgUE07MzUyNA=="/>
+        <attribute name="edited" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMTAtMTc7MDU6MzY6MTQgUE07NTszNjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program uses a loop to generate a list of"/>
+            <comment text="mulitplication expressions for a given value"/>
+            <comment text="References:"/>
+            <comment text="https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/loop-examples/"/>
+            <comment text="https://stackoverflow.com/questions/51187314/how-do-i-use-while-loops-to-create-a-multiplication-table"/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <declare name="expressioncount" type="Integer" array="False" size=""/>
+            <assign variable="value" expression="GetValue(&quot;value&quot;)"/>
+            <assign variable="expressioncount" expression="GetValue(&quot;expression&quot;)"/>
+            <call expression="ProcessExpressions(value,expressioncount)"/>
+        </body>
+    </function>
+    <function name="DisplayExpression" type="None" variable="">
+        <parameters>
+            <parameter name="value" type="Integer" array="False"/>
+            <parameter name="count" type="Integer" array="False"/>
+            <parameter name="result" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="value &amp; &quot; * &quot; &amp; count &amp; &quot; = &quot; &amp; result" newline="True"/>
+        </body>
+    </function>
+    <function name="GetValue" type="Integer" variable="value">
+        <parameters>
+            <parameter name="name" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter &quot;&amp; name &amp; &quot;:&quot;" newline="True"/>
+            <input variable="value"/>
+        </body>
+    </function>
+    <function name="ProcessExpressions" type="None" variable="">
+        <parameters>
+            <parameter name="value" type="Integer" array="False"/>
+            <parameter name="expressioncount" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <while expression="count &lt;= expressioncount">
+                <assign variable="result" expression="value * count"/>
+                <assign variable="count" expression="count + 1"/>
+                <assign variable="result" expression="result + 1"/>
+                <call expression="DisplayExpression(value,count,result)"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
