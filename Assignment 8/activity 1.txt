@@ -30,7 +30,7 @@ Process Expressions
         Expression count
     Process:
         Loop for count from 1 to expression count by 1
-            Calculate result
+            Calculate result (value * count)
             Display expression
      Return Value:
         None
