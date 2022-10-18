@@ -2,8 +2,9 @@
 # Multiplication expressions for a given value
 
 Main Program
-Get Value
-Get Expression Count
+    Get Value
+    Get Expression Count
+    Process Expressions
 
 Get Value
     Parameters:
@@ -16,15 +17,14 @@ Get Value
         
 Process Expressions
     Parameters:
-      Value
-      Expression Count
+        Value
+        Expression Count
     Process:
         Count = 1
         While loop count less than or equal to Expression count
-        Calculate Result
-        Assign count + 1
-        Assign Result + 1
-        Dispay Expression
+            Calculate Result
+            Dispay Expression
+            Assign count + 1
     Return Value:
         None
         
