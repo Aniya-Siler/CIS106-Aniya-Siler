@@ -2,10 +2,22 @@
 # multiplication expressions for a given value.
 
 Main Progam
-    Get value
-    Get expression count
-    Process expressions
- 
+    Loop
+        Get value
+        Get expression count
+        Process expressions
+        Get answer
+        While answer is yes
+
+Get answer
+    Parameters:
+       Name
+    Process:
+       Display prompt (continue or not)
+       Get answer
+    Return Value:
+       Answer
+
 Get Value
     Parameters:
        Name
