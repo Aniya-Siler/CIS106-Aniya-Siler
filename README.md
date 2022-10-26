@@ -26,3 +26,5 @@ In session 8 we learned about the different types of loops and when and how to u
 
 ## Assignment 9
 As part of session nine, while loops were the focus of our discussion. It wasn't at all difficult to switch from for loops to while loops once I had started to get the hang of it. It was important to keep in mind that both structures are iterative which could have been the reason that it was easier to switch between the two. The errors that I made in this assignment were small and I struggled to fix them. Compared to for loops, I will say that while loops are a little more tedious to work with. It was a good learning experience for me to learn the difference between the two in general. 
+
+## Assignment 10
