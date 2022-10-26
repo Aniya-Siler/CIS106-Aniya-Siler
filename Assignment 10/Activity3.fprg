@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cash america"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-26 11:09:45 AM"/>
+        <attribute name="created" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMTAtMTY7MDg6NDY6MzAgUE07MzUyNA=="/>
+        <attribute name="edited" value="Y2FzaCBhbWVyaWNhO0FOSVlBU0NPTVBVVEVSOzIwMjItMTAtMjY7MTE6MDk6NDUgQU07MTQ7MzY2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program uses a loop to generate a list of"/>
+            <comment text="mulitplication expressions for a given value"/>
+            <comment text="References:"/>
+            <comment text="https://bobbyhadz.com/blog/python-input-yes-no-loop"/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <declare name="answer" type="String" array="False" size=""/>
+            <declare name="expressioncount" type="Integer" array="False" size=""/>
+            <do expression="answer = &quot;yes&quot; or answer = &quot;Yes&quot;">
+                <assign variable="value" expression="GetValue(&quot;value&quot;)"/>
+                <assign variable="expressioncount" expression="GetValue(&quot;expression&quot;)"/>
+                <call expression="ProcessExpressions(value,expressioncount)"/>
+                <assign variable="answer" expression="GetAnswer()"/>
+            </do>
+        </body>
+    </function>
+    <function name="DisplayExpression" type="None" variable="">
+        <parameters>
+            <parameter name="value" type="Integer" array="False"/>
+            <parameter name="count" type="Integer" array="False"/>
+            <parameter name="result" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="value &amp; &quot; * &quot; &amp; count &amp; &quot; = &quot; &amp; result" newline="True"/>
+        </body>
+    </function>
+    <function name="GetAnswer" type="String" variable="answer">
+        <parameters/>
+        <body>
+            <declare name="answer" type="String" array="False" size=""/>
+            <output expression="&quot;Do you want to continue or not&quot;" newline="True"/>
+            <input variable="answer"/>
+        </body>
+    </function>
+    <function name="GetValue" type="Integer" variable="value">
+        <parameters>
+            <parameter name="name" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter &quot;&amp; name &amp; &quot;:&quot;" newline="True"/>
+            <input variable="value"/>
+        </body>
+    </function>
+    <function name="ProcessExpressions" type="None" variable="">
+        <parameters>
+            <parameter name="value" type="Integer" array="False"/>
+            <parameter name="expressioncount" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <for variable="count" start="1" end="expressioncount" direction="inc" step="1">
+                <assign variable="result" expression="value * count"/>
+                <call expression="DisplayExpression(value,count,result)"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
