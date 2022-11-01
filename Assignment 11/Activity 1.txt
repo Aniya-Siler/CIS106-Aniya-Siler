@@ -1,37 +1,63 @@
 This program asks the userto enter their birthday and then displays the day of the week they were born
 
 Main
-Create name and age arrays
-display arrays
-get year
-get month
-get day
-display result
-
     get year
-     Parameters:
-       Array
-     Process:
-      Get year
-      loop for index
-      add array index value total
-     Return Value:
-       year
-  get month
-     Parameters:
-       Array
-     Process:
-      Get month
-      loop for index
-      add array index value total
-     Return Value:
-       month
+    get month
+    get day
+    calculate zeller's congruence
+    look up day name
+    display result
+
+get year
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get year
+    Return Value:
+        year
+
+get month
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get month
+    Return Value:
+        month
+
 get day
-     Parameters:
-       Array
-     Process:
-      Get day
-      loop for index
-      add array index value total
-     Return Value:
-       day
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get day
+    Return Value:
+        day
+
+calculate zeller's congruence
+    Parameters:
+        year
+        month
+        day
+    Process:
+        calculate zeller's congruence
+    Return Value:
+        day number
+
+look up day name
+    Parameters:
+        day number
+    Process:
+        declare day array
+        look up day name
+    Return Value:
+        day name
+
+display results
+    Parameters:
+        day name
+    Process:
+        display day name
+    Return Value:
+        none
