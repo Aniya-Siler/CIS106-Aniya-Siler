@@ -1,0 +1,37 @@
+This program asks the userto enter their birthday and then displays the day of the week they were born
+
+Main
+Create name and age arrays
+display arrays
+get year
+get month
+get day
+display result
+
+    get year
+     Parameters:
+       Array
+     Process:
+      Get year
+      loop for index
+      add array index value total
+     Return Value:
+       year
+  get month
+     Parameters:
+       Array
+     Process:
+      Get month
+      loop for index
+      add array index value total
+     Return Value:
+       month
+get day
+     Parameters:
+       Array
+     Process:
+      Get day
+      loop for index
+      add array index value total
+     Return Value:
+       day
