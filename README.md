@@ -29,3 +29,11 @@ As part of session nine, while loops were the focus of our discussion. It wasn't
 
 ## Assignment 10
 As a result of lesson 10, I was able to demonstrate a while do loop. I had a difficult time with this assignment. Once I obtained clarification from YouTube, and a variety of other websites, it became a lot easier for me to complete the task. There was still a need for some teacher assistance, of course. While I think about a while do loop, I see it as an if statement and a while loop combined into one. The way I processed this assignment in my head really helped me to be able to comprehend the assignment to the point where I was able to finish it. In order for me to be able to apply what I learned in the future, I need to think of things from a different perspective, which I was able to do as soon as I thought of while do loop differently.
+
+## Assignmet 11
+
+## Assignment 12
+
+## Assignment 13
+
+## Assignment 14
