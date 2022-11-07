@@ -39,6 +39,8 @@ def lookdayname(day_number):
     day_name = days[day_number]
     return day_name
     
+def display_results(day_name):
+    print("Your day of birth landed on a " + str(day_name))
 def main():
     year = get_year()
     print(year)
@@ -50,6 +52,7 @@ def main():
     print(zellers_congruence)
     day_name = lookdayname(zellers_congruence)
     print(day_name)
+    display_results(day_name)
     
     
 main()
