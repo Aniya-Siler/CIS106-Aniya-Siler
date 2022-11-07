@@ -1,1 +1,35 @@
+This program displays the array in order from highest to lowest score from what the user enters
 
+Main
+Get grades
+Calculate Min
+Calculate Max
+Dynamic Array
+Display Result
+
+Get Grades
+    Parameters:
+    None
+    Process:
+        Ask the user to enter grades
+    Return Value:
+        Grades
+        
+Dynamic Array
+    Parameters:
+    Grades
+    Process:
+     Initialize empty array
+        For index from 0 to 5 by 1
+        Display Array
+    Return Value:
+    Dynamic Array
+    
+Display Result
+    Parameters:
+    Dynamic Array
+    Grades
+    Process:
+    Display Results
+    Return Value:
+    Display Result
