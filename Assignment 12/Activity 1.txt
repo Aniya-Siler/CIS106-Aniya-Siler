@@ -1,35 +1,74 @@
 This program displays the array in order from highest to lowest score from what the user enters
 
-Main
-Get grades
-Calculate Min
-Calculate Max
-Dynamic Array
-Display Result
-
-Get Grades
-    Parameters:
-    None
-    Process:
-        Ask the user to enter grades
-    Return Value:
-        Grades
-        
-Dynamic Array
-    Parameters:
-    Grades
-    Process:
-     Initialize empty array
-        For index from 0 to 5 by 1
-        Display Array
-    Return Value:
-    Dynamic Array
+Main:
+    Get scores array
+    Get highest score
+    Get lowest score
+    Get average
+    Display results
     
-Display Result
-    Parameters:
-    Dynamic Array
-    Grades
+ Get score:
+    parameters:
+        None
     Process:
-    Display Results
+        Display prompt
+        Get score
     Return Value:
-    Display Result
+        score
+        
+Get scores array:
+    Paramters:
+       None
+    Process:
+        Intialize array 
+        Loop
+            Get score
+            Add score to array
+            while score >= 0
+        Return Value:
+            Array
+            
+Get highest score:
+    Parameters:
+        Array
+    Process:
+        Initialize highest score to first array value
+        Loop for index from 1 to array length by 1
+            If highest score < array index value
+                highest score = array index value
+    Return Value:
+        Highest score
+        
+Get lowest score:
+    Parameters:
+        Array
+    Process:
+        Initialize lowest score to first array value
+        Loop for index from 1 to array length by 1
+            If lowest score < array index value
+                lowest score = array index value
+    Return Value:
+        Lowest score
+        
+Get Average:
+    Parameters:
+       Array
+    Process:
+        Initialize total
+        Loop for index from 0 to array length by 1
+            Calculate total
+        Calculate average
+    Return Value:
+        Average
+            
+Display results:
+    Parameters:
+        Highest score
+        Lowest score
+        Average
+    Process:
+        Display highest score
+        Display lowest score
+        Display average
+    Return Value:
+        None
