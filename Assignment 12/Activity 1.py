@@ -42,8 +42,6 @@ def display_result(highest, lowest, average):
           " Lowest score is " + str(lowest) +
           " Average is " + str(average))
     
-
-
 def main():
     array = get_scores_array()
     print(array)
