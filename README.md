@@ -34,3 +34,6 @@ As a result of lesson 10, I was able to demonstrate a while do loop. I had a dif
 As a part of this session, we learned about arrays. In particular, we were working on activities related to defined values. It took me a while to understand the content of this session at first, but after some practice, I was able to finish it successfully. As a result of this assignment alone, I was able to develop my ability to think critically. It'll also assist me in the future because I realized that the more I practice, the better I understand, and I've also acquired knowledge of arrays and how to demonstrate them, which will be helpful later on.
 
 ## Assignment 12
+As a part of this session, we focused on dynamic arrays. In my work on activity two, I was responsible for displaying the array of scores from the highest to the lowest based on what the user entered into the input box. There were some difficulties with this assignment, but overall it was a fairly easy one. My method of going line by line was a great help in minimizing the number of errors I would have to fix. For my future assignment, I will do more research in order to understand the assignment and material better and also use my resources to my advantage. 
+
+## Assignment 13
