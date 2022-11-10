@@ -1,5 +1,5 @@
 # This program displays the array in order from highest to lowest score from what the user enters
-# Refrences:
+# References:
 # https://www.digitalocean.com/community/tutorials/how-to-use-break-continue-and-pass-statements-when-working-with-loops-in-python-3
 # https://stackoverflow.com/questions/70238155/ask-a-user-for-10-integers-one-at-a-time-and-store-in-list-python
 
