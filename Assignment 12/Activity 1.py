@@ -1,12 +1,13 @@
-# This program displays the array in order from highest to lowest score from what the user enters
+# This program displays score in order from highest to lowest from what the user enters
 # References:
 # https://www.digitalocean.com/community/tutorials/how-to-use-break-continue-and-pass-statements-when-working-with-loops-in-python-3
 # https://stackoverflow.com/questions/70238155/ask-a-user-for-10-integers-one-at-a-time-and-store-in-list-python
 
 def get_score():
-    print ("Enter the scores:")
+    print("Enter the scores:")
     score = int(input())
     return score
+
 
 def get_scores_array():
     array = []
@@ -16,12 +17,14 @@ def get_scores_array():
         array.append(score)
     return array
     
+    
 def get_highest_score(array):
     highest = array[0]
     for index in range(1,len(array)):
         if highest < array[index]:
             highest = array[index]
     return highest
+
 
 def get_lowest_score(array):
     lowest = array[0]
@@ -30,6 +33,7 @@ def get_lowest_score(array):
             lowest = array[index]
     return lowest
 
+
 def get_average(array):
     total = 0
     for index in range(len(array)):
@@ -37,11 +41,13 @@ def get_average(array):
     average = total/array[index]
     return average
    
+   
 def display_result(highest, lowest, average):
     print("Highest score is " + str(highest) +
           " Lowest score is " + str(lowest) +
           " Average is " + str(average))
     
+
 def main():
     array = get_scores_array()
     print(array)
