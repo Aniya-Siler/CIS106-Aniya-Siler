@@ -50,13 +50,9 @@ def display_result(highest, lowest, average):
 
 def main():
     array = get_scores_array()
-    print(array)
     highest = get_highest_score(array)
-    print(highest)
     lowest = get_lowest_score(array)
-    print(lowest)
     average = get_average(array)
-    print(average)
     display_result(highest, lowest, average)
     
     
