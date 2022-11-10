@@ -11,7 +11,7 @@ Main:
     parameters:
         None
     Process:
-        Display prompt
+        "Enter the scores:"
         Get score
     Return Value:
         score
@@ -24,7 +24,7 @@ Get scores array:
         Loop
             Get score
             Add score to array
-            while score >= 0
+            if not score >= 0 break
         Return Value:
             Array
             
