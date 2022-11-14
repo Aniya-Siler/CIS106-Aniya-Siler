@@ -1,0 +1,46 @@
+This program asks user for firstname and lastname displays it as lastname, first initial
+
+Main 
+get firstname
+get lastname
+demonstrate sequence string
+
+Get firstname:
+    Parameters:
+        None
+    Process:
+        "What's your first name?:"
+        Get firstname
+    Return Value:
+        firstname
+        
+Get lastname:
+    Parameters:
+        None
+    Process:
+        "What's your last name?:"
+        Get lastname
+    Return Value:
+        lastname
+         
+Sequence:
+    Parameters:
+        firstname
+        lastname
+    Process:
+        lastname = ""
+        firstname = 
+    Return Value:
+        sequence
+   
+Display Results:
+    Parameters:
+        firstname
+        lastname
+        sequence
+    Process:
+        print("string.format(): {0} {1:.2f}".format(lastname, firstname))
+    Return Value:
+        None
+
+        
