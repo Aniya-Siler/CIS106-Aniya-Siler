@@ -19,7 +19,7 @@ Get first initial:
     Parameters:
         full name
     Process:
-        Split full name
+        Strip full name
         Get firstname
         Get first initial
     Return Value:
