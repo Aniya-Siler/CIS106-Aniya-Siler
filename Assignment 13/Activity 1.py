@@ -18,7 +18,7 @@ def get_first_ini(full_name):
 
 
 def get_last_name(full_name):
-    last = full_name.split()[1]
+    last = full_name.split()[-1]
     return last
 
 
