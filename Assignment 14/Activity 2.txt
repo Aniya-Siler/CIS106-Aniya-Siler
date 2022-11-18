@@ -1,0 +1,37 @@
+This progam displays high, low, and average scores based on input from scores.txt.
+
+Main
+file name (scores.txt)
+If path and process file
+Else "File does not exist"
+
+
+Process File
+    Parameters:
+    Filename
+    Process:
+        open file name
+        close filename
+    Return Value:
+        None
+
+Calculate Scores
+    Parameters:
+    Scores
+    Process:
+       Calculate High
+       Calculate Low
+       Calculate Average
+    Return Value:
+    
+    
+Display Results:
+     Parameters:
+     Scores
+     High
+     Low
+     Average
+     Process:
+     Display prompt
+     Return Value:
+     None
