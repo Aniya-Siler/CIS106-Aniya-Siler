@@ -1,23 +1,25 @@
 This progam displays high, low, and average scores based on input from scores.txt.
 
 Main
-file name (scores.txt)
-If path and process file
-Else "File does not exist"
+Read Score.txt file
 
-
-Process File
+Read File
     Parameters:
     Filename
     Process:
-        open file name
-        close filename
+        Create exception handler
+        Open file
+           While not end-of-file
+           Read line
+           Display line
+           Close File
+           Handle excpetions
     Return Value:
         None
 
 Calculate Scores
     Parameters:
-    Scores
+    Read File
     Process:
        Calculate High
        Calculate Low
@@ -27,7 +29,7 @@ Calculate Scores
     
 Display Results:
      Parameters:
-     Scores
+     Read File
      High
      Low
      Average
