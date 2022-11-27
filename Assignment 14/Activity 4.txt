@@ -1,0 +1,26 @@
+# This program that verifies that the file exists,
+# and then processes the file and displays each address
+
+Main
+Read file
+Process file
+
+Read File
+    Parameters:
+    filename
+    Process:
+    open file
+    for line in file
+    close file
+    Return Value:
+    none
+   
+Process File
+    Parameters:
+    filename
+    Process:
+    for line in file
+    loop
+    Return Value:
+    Address
+
