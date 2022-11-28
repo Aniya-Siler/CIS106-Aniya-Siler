@@ -2,6 +2,10 @@ This progam displays high, low, and average scores based on input from scores.tx
 
 Main
 Read Score.txt file
+Get Highest
+Get Lowest
+Get Average
+Display Results
 
 Read File
     Parameters:
