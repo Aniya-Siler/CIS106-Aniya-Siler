@@ -13,7 +13,7 @@ Read File
     Process:
         Create exception handler
         Open file
-        Initalize Score
+        Initalize array
         While not end-of-file
            Read line
            Strip
