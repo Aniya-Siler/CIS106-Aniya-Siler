@@ -9,31 +9,60 @@ Read File
     Process:
         Create exception handler
         Open file
-           While not end-of-file
+        Initalize Score
+        While not end-of-file
            Read line
-           Display line
-           Close File
+           Strip
+           Split line
+              Get Score
+              Add score to array
            Handle excpetions
     Return Value:
-        None
+        Array
 
-Calculate Scores
+Get highest score:
     Parameters:
-    Read File
+        Array
     Process:
-       Calculate High
-       Calculate Low
-       Calculate Average
+        Initialize highest score to first array value
+        Loop for index from 1 to array length by 1
+            If highest score < array index value
+                highest score = array index value
     Return Value:
+        Highest score
+        
+Get lowest score:
+    Parameters:
+        Array
+    Process:
+        Initialize lowest score to first array value
+        Loop for index from 1 to array length by 1
+            If lowest score < array index value
+                lowest score = array index value
+    Return Value:
+        Lowest score
+        
+Get Average:
+    Parameters:
+       Array
+    Process:
+        Initialize total
+        Loop for index from 0 to array length by 1
+            Calculate total
+        Calculate average
+    Return Value:
+        Average
     
     
-Display Results:
-     Parameters:
-     Read File
-     High
-     Low
-     Average
-     Process:
-     Display prompt
-     Return Value:
-     None
+Display results:
+    Parameters:
+        Highest score
+        Lowest score
+        Average
+        Array
+    Process:
+        Display highest score
+        Display lowest score
+        Display average
+    Return Value:
+        None
