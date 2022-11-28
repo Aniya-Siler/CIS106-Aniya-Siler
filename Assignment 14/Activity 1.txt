@@ -1,0 +1,39 @@
+This progam displays high, low, and average scores based on input from scores.txt.
+
+Main
+Read Score.txt file
+
+Read File
+    Parameters:
+    Filename
+    Process:
+        Create exception handler
+        Open file
+           While not end-of-file
+           Read line
+           Display line
+           Close File
+           Handle excpetions
+    Return Value:
+        None
+
+Calculate Scores
+    Parameters:
+    Read File
+    Process:
+       Calculate High
+       Calculate Low
+       Calculate Average
+    Return Value:
+    
+    
+Display Results:
+     Parameters:
+     Read File
+     High
+     Low
+     Average
+     Process:
+     Display prompt
+     Return Value:
+     None
