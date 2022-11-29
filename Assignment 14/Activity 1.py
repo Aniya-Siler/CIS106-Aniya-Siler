@@ -8,6 +8,7 @@ def read_file(filename):
     try:
         filename = open("scores.txt", "r") 
         array = []
+        line = filename.readline()
         while True:
             line = filename.readline()
             if line== "":
@@ -16,14 +17,14 @@ def read_file(filename):
                 line = line.strip()
                 line = line.split(',')
                 score = line[1]
-                array.append(int(float(score)))
+                array.append(int(score))
     except Exception as e:
         print(e)
     return array
 
 
 def get_highest_score(array):
-    highest = array[1]
+    highest = array[0]
     for index in range(1, len(array)):
         if highest < array[index]:
             highest = array[index]
@@ -31,7 +32,7 @@ def get_highest_score(array):
 
 
 def get_lowest_score(array):
-    lowest = array[1]
+    lowest = array[0]
     for index in range(1, len(array)):
         if lowest > array[index]:
             lowest = array[index]
@@ -48,7 +49,7 @@ def get_average(array):
    
 def display_result(array, highest, lowest, average):
     print(array)
-    print("High is " + str(highest))
+    print(" High is " + str(highest))
     print(" Low is " + str(lowest))
     print(" Average is " + str(average))
 
