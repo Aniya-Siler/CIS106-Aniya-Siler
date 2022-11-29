@@ -13,6 +13,7 @@ def read_file(filename):
             line = filename.readline()
             if line== "":
                 break
+                
             else:
                 line = line.strip()
                 line = line.split(',')
