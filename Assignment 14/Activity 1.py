@@ -42,7 +42,7 @@ def get_average(array):
     total = 0
     for index in range(len(array)):
         total += array[index]
-    average = total / array[index]
+    average = total /len(array)
     return average
    
    
