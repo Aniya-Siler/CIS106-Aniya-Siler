@@ -16,7 +16,7 @@ def read_file(filename):
                 line = line.strip()
                 line = line.split(',')
                 score = line[1]
-                array.append (int(score))
+                array.append(int(float(score)))
     except Exception as e:
         print(e)
     return array
@@ -48,8 +48,8 @@ def get_average(array):
    
 def display_result(array, highest, lowest, average):
     print(array)
-    print("High score is " + str(highest))
-    print(" Low score is " + str(lowest))
+    print("High is " + str(highest))
+    print(" Low is " + str(lowest))
     print(" Average is " + str(average))
 
     
@@ -65,4 +65,3 @@ def main():
 main()
         
          
-
