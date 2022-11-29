@@ -19,7 +19,7 @@ def read_file(filename):
                 line = line.split(',')
                 score = line[1]
                 array.append(int(score))
-    except Exception as e:
+    except Exception as e :
         print(e)
     return array
 
