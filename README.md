@@ -38,3 +38,7 @@ As a part of this session, we focused on dynamic arrays. In my work on activity 
 
 ## Assignment 13
 Session thirteen was really simple for me. A lot of information was covered in this lesson regarding strings and files. A number of topics were reviewed in class, including string functions, formatting, and file inputs and outputs. I was already familiar with strings, but this lesson gave me a deeper understanding of strings, which helped me complete this assignment. Throughout my computer programming career, I am almost positive that I will be using strings to accomplish a wide range of tasks and programs, and I am glad that I learned about strings and files so early on in my career.
+
+## Assignment 14
+As a whole, session fourteen was a challenging session. As part of my chosen activity I chose, I focused on reading a file. During the creation of the program plan, I had a general idea, but I had to make a few adjustments as I went along. However, when it came to the actual code assignment, I had a hard time understanding it at all. In order for me to solve my errors, I realized that I needed to think about each line of code in my head as a separate entity and not as a whole. That way, I will be able to break it down in my head and figure out how to solve the errors.
+
