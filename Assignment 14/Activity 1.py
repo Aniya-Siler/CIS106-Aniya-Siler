@@ -1,4 +1,5 @@
-# This progam displays high, low, and average scores based on input from scores.txt.
+# This progam displays high, low, and average scores
+# based on input from scores.txt
 # References:
 # https://www.stechies.com/read-file-line-by-line-python/
 # https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/python-examples-7/
@@ -10,7 +11,7 @@ def read_file(filename):
         array = []
         while True:
             line = filename.readline()
-            if line=="":
+            if line== "":
                 break
             else:
                 line = line.strip()
