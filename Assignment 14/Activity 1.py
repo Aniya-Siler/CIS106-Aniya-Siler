@@ -1,8 +1,3 @@
-# This progam displays high, low, and average scores based on input from scores.txt.
-# References:
-# https://www.stechies.com/read-file-line-by-line-python/
-# https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/python-examples-7/
-
 
 def read_file(filename):
     try:
@@ -16,14 +11,14 @@ def read_file(filename):
                 line = line.strip()
                 line = line.split(',')
                 score = line[1]
-                array.append(int(score))
+                array.append (int(float(score)))
     except Exception as e:
         print(e)
     return array
 
 
 def get_highest_score(array):
-    highest = array[0]
+    highest = array[1]
     for index in range(1, len(array)):
         if highest < array[index]:
             highest = array[index]
@@ -31,7 +26,7 @@ def get_highest_score(array):
 
 
 def get_lowest_score(array):
-    lowest = array[0]
+    lowest = array[1]
     for index in range(1, len(array)):
         if lowest > array[index]:
             lowest = array[index]
@@ -63,5 +58,4 @@ def main():
 
 
 main()
-        
-         
+
