@@ -1,11 +1,11 @@
 This progam displays high, low, and average scores based on input from scores.txt.
 
 Main
-Read Score.txt file
-Get Highest
-Get Lowest
-Get Average
-Display Results
+    Read Score.txt file
+    Get Highest
+    Get Lowest
+    Get Average
+    Display Results
 
 Read File
     Parameters:
@@ -20,7 +20,7 @@ Read File
            Split line
               Get Score
               Add score to array
-           Handle excpetions
+        Handle excpetions
     Return Value:
         Array
 
