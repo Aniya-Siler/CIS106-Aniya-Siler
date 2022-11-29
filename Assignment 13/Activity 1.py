@@ -13,12 +13,22 @@ def get_full_name():
     
     
 def get_first_ini(full_name):
-    first = full_name.strip()[0]
+    full_name = full_name.strip()
+    if len(full_name) > 0:
+        first = full_name.strip()[0]
+    else:
+        first = ""
+
     return first
 
 
 def get_last_name(full_name):
-    last = full_name.split()[-1]
+    name = full_name.split()
+    if len(name) > 0:
+        last = name[-1]
+    else:
+        last = ""
+
     return last
 
 
