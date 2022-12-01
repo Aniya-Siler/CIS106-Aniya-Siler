@@ -42,3 +42,4 @@ Session thirteen was really simple for me. A lot of information was covered in t
 ## Assignment 14
 As a whole, session fourteen was a challenging session. As part of my chosen activity I chose, I focused on reading a file. During the creation of the program plan, I had a general idea, but I had to make a few adjustments as I went along. However, when it came to the actual code assignment, I had a hard time understanding it at all. In order for me to solve my errors, I realized that I needed to think about each line of code in my head as a separate entity and not as a whole. That way, I will be able to break it down in my head and figure out how to solve the errors.
 
+## Final
