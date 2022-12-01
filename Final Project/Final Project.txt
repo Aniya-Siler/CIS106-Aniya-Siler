@@ -1,6 +1,106 @@
-This program 
+This program reads from a CD Catalog and Builds arrays then displays the results as title, artist, country, price, year
 
+Main:
+Read CD Catalog
+Get Title
+Get Artist
+Get Country
+Get Price
+Get Year
+Get Average Price
+Display Results
 
-
-Main
-
+Get Title:
+    Parameters:
+    Filename
+    Process:
+        Open File
+        Initalize array title
+        While not end-of-file
+        Read Line
+        Strip
+            Get Title
+            Add Title to array
+    Return Value:
+        Title
+        
+Get Artist:
+    Parameters:
+    Filename
+    Process:
+        Open File
+        Initalize array artist
+        While not end-of-file
+        Read Line
+        Strip
+            Get Artist
+            Add Artist to array
+    Return Value:
+        Artist
+        
+Get Country:
+    Parameters:
+    Filename
+    Process:
+        Open File
+        Initalize array country
+        While not end-of-file
+        Read Line
+        Strip
+            Get Country
+            Add Country to array
+    Return Value:
+        Country
+        
+Get Price:
+    Parameters:
+    Filename
+    Process:
+        Open File
+        Initalize array price
+        While not end-of-file
+        Read Line
+        Strip
+            Get Price
+            Add Price to array
+        Convert to interger
+    Return Value:
+        Price
+        
+Get Year:
+    Parameters:
+    Filename
+    Process:
+        Open File
+        Initalize array year
+        While not end-of-file
+        Read Line
+        Strip
+            Get Year
+            Add Year to array
+    Return Value:
+        Year
+       
+Get Average:
+    Parameters:
+       array price
+    Process:
+        Initialize total
+        Loop for index from 0 to array length by 1
+            Calculate total
+        Calculate average
+    Return Value:
+        Average
+        
+Display Results:
+     Parameters:
+         title
+         artist
+         country
+         price
+         year
+         average
+     Process:
+         Display Results
+     Return Value:
+         None
