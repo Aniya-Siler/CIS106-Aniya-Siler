@@ -1,7 +1,7 @@
 # This program reads from a CD Catalog and Builds arrays
 # Then displays the results as title, artist, country, price, year
 # References:
-#
+# https://www.geeksforgeeks.org/python-string-replace/
 
 
 def get_title(filename):
