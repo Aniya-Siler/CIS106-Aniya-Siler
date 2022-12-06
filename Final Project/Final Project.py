@@ -5,16 +5,25 @@
 
 
 def get_title(filename):
-    filename = open("Catalog.txt","r")
-    title = []
-    line1 = filename.readline()
-    line1 = filename.readline()
-    while True:
+    try:
+        filename = open("Catalog.txt", "r")
+        title = []
         line1 = filename.readline()
-        if line1== "":
-            break
-        else:
-            line1 = line1.strip()
+        line1 = filename.readline()
+        while True:
+            line1 = filename.readline()
+            if line1== "":
+                break
+            else:
+                line1 = line1.replace("<TITLE>", "" )
+                line1 = line1.replace("</TITLE>", "" )
+                line1 = line1.strip()
+                
+                print(line1)
+    except Exception as e:
+        print(e)
+        
+        
 def main():
     filename = 'Catalog.txt'
     title = get_title(filename)
