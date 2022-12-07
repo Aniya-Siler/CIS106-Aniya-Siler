@@ -1,56 +1,57 @@
 This program reads from a CD Catalog and Builds arrays then displays the results as title, artist, country, price, year
 
 Main:
-Read CD Catalog
-Get Title
-Get Artist
-Get Country
+Read Plant Catalog
+Get Common
+Get Botanical
+Get Zone
 Get Price
-Get Year
+Get Light
 Get Average Price
+Get Items
 Display Results
 
-Get Title:
+Get Common:
     Parameters:
     Filename
     Process:
         Open File
-        Initalize array title
+        Initalize array common
         While not end-of-file
         Read Line
         Strip
-            Get Title
-            Add Title to array
+            Get common
+            Add common to array
     Return Value:
-        Title
+        common
         
-Get Artist:
+Get Botanical:
     Parameters:
     Filename
     Process:
         Open File
-        Initalize array artist
+        Initalize array botanical
         While not end-of-file
         Read Line
         Strip
-            Get Artist
-            Add Artist to array
+            Get botanical
+            Add botanical to array
     Return Value:
-        Artist
+        botanical
         
-Get Country:
+Get zone:
     Parameters:
     Filename
     Process:
         Open File
-        Initalize array country
+        Initalize array zone
         While not end-of-file
         Read Line
         Strip
-            Get Country
-            Add Country to array
+            Get zone
+            Add zone to array
     Return Value:
-        Country
+        zone
         
 Get Price:
     Parameters:
@@ -67,19 +68,19 @@ Get Price:
     Return Value:
         Price
         
-Get Year:
+Get light:
     Parameters:
     Filename
     Process:
         Open File
-        Initalize array year
+        Initalize array light
         While not end-of-file
         Read Line
         Strip
-            Get Year
-            Add Year to array
+            Get light
+            Add light to array
     Return Value:
-        Year
+        light
        
 Get Average:
     Parameters:
@@ -92,13 +93,21 @@ Get Average:
     Return Value:
         Average
         
+Get Items
+    Parameters:
+    common
+    Process:
+    len()
+    Return Value:
+    common
+        
 Display Results:
      Parameters:
-         title
-         artist
-         country
+         common
+         botanical
+         zone
          price
-         year
+         light
          average
      Process:
          Display Results
