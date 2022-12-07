@@ -1,4 +1,5 @@
-This program reads from a CD Catalog and Builds arrays then displays the results as title, artist, country, price, year
+This program reads from a Plant Catalog and Builds arrays
+then displays the results as common name (botanical name) - zone - light - price
 
 Main:
 Read Plant Catalog
