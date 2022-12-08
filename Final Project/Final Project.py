@@ -14,11 +14,11 @@ def get_common(filename):
             if line1== "":
                 break
             if "<COMMON>" in line1:
+                print(line1)
                 line1 = line1.strip()
                 line1 = line1.replace('<COMMON>', '' )
                 line1 = line1.replace('</COMMON>', '' )
-                common = line1
-                commons.append(common)
+                commons.append(line1)
             print(commons)
     except Exception as e:
         print(e)
@@ -38,8 +38,7 @@ def get_botanical(filename):
                 line2 = line2.strip()
                 line2 = line2.replace('<BOTANICAL>', '' )
                 line2 = line2.replace('</BOTANICAL>', '' )
-                botanical = line2
-                botanicals.append(botanical)
+                botanicals.append(line2)
             print(botanicals)
     except Exception as e:
         print(e)
@@ -59,8 +58,7 @@ def get_zone(filename):
                 line3 = line3.replace('<ZONE>', '' )
                 line3 = line3.replace('</ZONE>', '' )
                 line3 = line3.replace('Annual', '' )
-                zone = line3
-                zones.append(zone)
+                zones.append(line3)
             print(zones)
     except Exception as e:
         print(e)
@@ -81,8 +79,7 @@ def get_price(filename):
                 line4 = line4.replace('<PRICE>', '' )
                 line4 = line4.replace('</PRICE>', '' )
                 line4 = line4.replace('$', '')
-                price = line4
-                prices.append(float(price))
+                prices.append(float(line4))
             print(prices)
     except Exception as e:
         print(e)
@@ -102,18 +99,14 @@ def get_light(filename):
                 line5 = line5.strip()
                 line5 = line5.replace('<BOTANICAL>', '' )
                 line5 = line5.replace('</BOTANICAL>', '' )
-                light = line5
-                lights.append(light)
+                lights.append(line5)
             print(lights)
     except Exception as e:
         print(e)
     return lights
 
 def get_average(prices):
-    total = 0
-    for index in range(len(prices)):
-        total += prices[index]
-    average = total /len(prices)
+    str(sum(prices)/len(prices))
     return average
 
 
