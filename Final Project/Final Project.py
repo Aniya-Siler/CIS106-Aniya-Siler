@@ -106,9 +106,15 @@ def get_light(filename):
     return lights
 
 def get_average(prices):
-    str(sum(prices)/len(prices))
+    total = 0
+    for index in range(len(prices)):
+        total += prices[index]
+    average = total /len(prices)
     return average
 
+def get_items(commons):
+    items = len(commons)
+    return items
 
         
         
@@ -120,9 +126,7 @@ def main():
     prices = get_price(filename)
     lights = get_light(filename)
     average = get_average(prices)
+    items = get_items(commons)
     
     
-main()        
-        
-        
-        
+main()   
