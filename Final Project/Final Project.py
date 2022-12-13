@@ -7,19 +7,19 @@
 
 def get_common(filename):
     try:
-        filename = open('plant_catalog.xml', 'r')
+        filename = open("plant_catalog.xml","r")
         commons = []
         while True:
             line1 = filename.readline()
             if line1== "":
                 break
             if "<COMMON>" in line1:
-                print(line1)
                 line1 = line1.strip()
+                print(line1)
                 line1 = line1.replace('<COMMON>', '' )
                 line1 = line1.replace('</COMMON>', '' )
                 commons.append(line1)
-            print(commons)
+                print(commons)
     except Exception as e:
         print(e)
     return commons
@@ -42,7 +42,7 @@ def get_botanical(filename):
             print(botanicals)
     except Exception as e:
         print(e)
-    return botanicals
+    return line2
 
 def get_zone(filename):
     try:
@@ -62,7 +62,7 @@ def get_zone(filename):
             print(zones)
     except Exception as e:
         print(e)
-    return zones
+    return line3
 
 
 def get_price(filename):
@@ -83,7 +83,7 @@ def get_price(filename):
             print(prices)
     except Exception as e:
         print(e)
-    return prices
+    return line4
 
 
 def get_light(filename):
@@ -103,7 +103,8 @@ def get_light(filename):
             print(lights)
     except Exception as e:
         print(e)
-    return lights
+    return line5
+
 
 def get_average(prices):
     total = 0
@@ -129,4 +130,7 @@ def main():
     items = get_items(commons)
     
     
-main()   
+main()        
+        
+        
+        
