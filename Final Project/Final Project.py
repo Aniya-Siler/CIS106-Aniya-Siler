@@ -19,10 +19,9 @@ def get_common(filename):
                 line1 = line1.replace('<COMMON>', '' )
                 line1 = line1.replace('</COMMON>', '' )
                 commons.append(line1)
-                print(commons)
     except Exception as e:
         print(e)
-    return commons
+    return line1
 
 
 def get_botanical(filename):
@@ -36,10 +35,10 @@ def get_botanical(filename):
             
             if "<BOTANICAL>" in line2:
                 line2 = line2.strip()
+                print(line2)
                 line2 = line2.replace('<BOTANICAL>', '' )
                 line2 = line2.replace('</BOTANICAL>', '' )
                 botanicals.append(line2)
-            print(botanicals)
     except Exception as e:
         print(e)
     return line2
@@ -55,11 +54,11 @@ def get_zone(filename):
             
             if "<ZONE>" in line3:
                 line3 = line3.strip()
+                print(line3)
                 line3 = line3.replace('<ZONE>', '' )
                 line3 = line3.replace('</ZONE>', '' )
                 line3 = line3.replace('Annual', '' )
                 zones.append(line3)
-            print(zones)
     except Exception as e:
         print(e)
     return line3
@@ -76,11 +75,11 @@ def get_price(filename):
             
             if "<PRICE>" in line4:
                 line4 = line4.strip()
+                print(line4)
                 line4 = line4.replace('<PRICE>', '' )
                 line4 = line4.replace('</PRICE>', '' )
                 line4 = line4.replace('$', '')
                 prices.append(float(line4))
-            print(prices)
     except Exception as e:
         print(e)
     return line4
@@ -97,10 +96,10 @@ def get_light(filename):
             
             if "<BOTANICAL>" in line5:
                 line5 = line5.strip()
+                print(line5)
                 line5 = line5.replace('<BOTANICAL>', '' )
                 line5 = line5.replace('</BOTANICAL>', '' )
                 lights.append(line5)
-            print(lights)
     except Exception as e:
         print(e)
     return line5
