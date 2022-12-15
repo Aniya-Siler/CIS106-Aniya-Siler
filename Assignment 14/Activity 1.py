@@ -1,141 +1,69 @@
-# This program reads from a CD Catalog and Builds arrays
-# Then displays the results as title, artist, country, price, year
+# This progam displays high, low, and
+# average scores based on input from scores.txt.
 # References:
-# https://www.geeksforgeeks.org/python-string-replace/
+# https://www.stechies.com/read-file-line-by-line-python/
 # https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/python-examples-7/
 
 
-def get_common(filename):
+def read_file(filename):
     try:
-        filename = open("plant_catalog.xml","r")
-        commons = []
+        filename =open("scores.txt", "r") 
+        array = []
+        line = filename.readline()
         while True:
-            line1 = filename.readline()
-            if line1== "":
+            line = filename.readline()
+            if line== "":
                 break
-            if "<COMMON>" in line1:
-                line1 = line1.strip()
-                line1 = line1.replace('<COMMON>', '' )
-                line1 = line1.replace('</COMMON>', '' )
-                commons.append(line1)
+            else:
+                line = line.strip()
+                line = line.split(',')
+                score = line[1]
+                array.append(int(score))
     except Exception as e:
         print(e)
-    return commons
+    return array
 
 
-def get_botanical(filename):
-    try:
-        filename = open('plant_catalog.xml', 'r')
-        botanicals = []
-        while True:
-            line2 = filename.readline()
-            if line2== "":
-                break
-            
-            if "<BOTANICAL>" in line2:
-                line2 = line2.strip()
-                line2 = line2.replace('<BOTANICAL>', '' )
-                line2 = line2.replace('</BOTANICAL>', '' )
-                botanicals.append(line2)
-    except Exception as e:
-        print(e)
-    return botanicals
-
-def get_zone(filename):
-    try:
-        filename = open('plant_catalog.xml', 'r')
-        zones = []
-        while True:
-            line3 = filename.readline()
-            if line3== "":
-                break
-            
-            if "<ZONE>" in line3:
-                line3 = line3.strip()
-                line3 = line3.replace('<ZONE>', '' )
-                line3 = line3.replace('</ZONE>', '' )
-                line3 = line3.replace('Annual', '' )
-                zones.append(line3)
-    except Exception as e:
-        print(e)
-    return zones
+def get_highest_score(array):
+    highest = array[0]
+    for index in range(1, len(array)):
+        if highest < array[index]:
+            highest = array[index]
+    return highest
 
 
-def get_price(filename):
-    try:
-        filename = open('plant_catalog.xml', 'r')
-        prices = []
-        while True:
-            line4 = filename.readline()
-            if line4== "":
-                break
-            
-            if "<PRICE>" in line4:
-                line4 = line4.strip()
-                line4 = line4.replace('<PRICE>', '' )
-                line4 = line4.replace('</PRICE>', '' )
-                line4 = line4.replace('$', '')
-                prices.append(float(line4))
-    except Exception as e:
-        print(e)
-    return prices
+def get_lowest_score(array):
+    lowest = array[0]
+    for index in range(1, len(array)):
+        if lowest > array[index]:
+            lowest = array[index]
+    return lowest
 
 
-def get_light(filename):
-    try:
-        filename = open('plant_catalog.xml', 'r')
-        lights = []
-        while True:
-            line5 = filename.readline()
-            if line5== "":
-                break
-            
-            if "<LIGHT>" in line5:
-                line5 = line5.strip()
-                line5 = line5.replace('<LIGHT>', '' )
-                line5 = line5.replace('</LIGHT>', '' )
-                lights.append(line5)
-    except Exception as e:
-        print(e)
-    return lights
-
-
-def get_average(prices):
+def get_average(array):
     total = 0
-    for index in range(len(prices)):
-        total += prices[index]
-    average = total /len(prices)
+    for index in range(len(array)):
+        total += array[index]
+    average = total /len(array)
     return average
+   
+   
+def display_result(array, highest, lowest, average):
+    print(array)
+    print(" High is " + str(highest))
+    print(" Low is " + str(lowest))
+    print(" Average is " + str(average))
 
-def get_items(commons):
-    items = len(commons)
-    return items
-
-def display_results(commons, botanicals, zones, lights, prices, average, items):
-    print(*commons, sep = "\n")
-
-        
-        
+    
 def main():
-    filename = 'plant_catalog.xml'
-    commons = get_common(filename)
-    print(commons)
-    botanicals = get_botanical(filename)
-    print(botanicals)
-    zones = get_zone(filename)
-    print(zones)
-    prices = get_price(filename)
-    print(prices)
-    lights = get_light(filename)
-    print(lights)
-    average = get_average(prices)
-    print(average)
-    items = get_items(commons)
-    print(items)
-    display_results(commons, botanicals, zones, lights, prices, average, items)
-    
-    
-main()        
+    filename = 'scores.txt'
+    array = read_file(filename)
+    highest = get_highest_score(array)
+    lowest = get_lowest_score(array)
+    average = get_average(array)
+    display_result(array, highest, lowest, average)
+
+
+main()
         
-        
-        
+         
