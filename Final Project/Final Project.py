@@ -2,7 +2,7 @@
 # Then displays the results as title, artist, country, price, year
 # References:
 # https://www.geeksforgeeks.org/python-string-replace/
-# 
+# https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/python-examples-7/
 
 
 def get_common(filename):
@@ -15,13 +15,12 @@ def get_common(filename):
                 break
             if "<COMMON>" in line1:
                 line1 = line1.strip()
-                print(line1)
                 line1 = line1.replace('<COMMON>', '' )
                 line1 = line1.replace('</COMMON>', '' )
                 commons.append(line1)
     except Exception as e:
         print(e)
-    return line1
+    return commons
 
 
 def get_botanical(filename):
@@ -35,13 +34,12 @@ def get_botanical(filename):
             
             if "<BOTANICAL>" in line2:
                 line2 = line2.strip()
-                print(line2)
                 line2 = line2.replace('<BOTANICAL>', '' )
                 line2 = line2.replace('</BOTANICAL>', '' )
                 botanicals.append(line2)
     except Exception as e:
         print(e)
-    return line2
+    return botanicals
 
 def get_zone(filename):
     try:
@@ -54,14 +52,13 @@ def get_zone(filename):
             
             if "<ZONE>" in line3:
                 line3 = line3.strip()
-                print(line3)
                 line3 = line3.replace('<ZONE>', '' )
                 line3 = line3.replace('</ZONE>', '' )
                 line3 = line3.replace('Annual', '' )
                 zones.append(line3)
     except Exception as e:
         print(e)
-    return line3
+    return zones
 
 
 def get_price(filename):
@@ -75,14 +72,13 @@ def get_price(filename):
             
             if "<PRICE>" in line4:
                 line4 = line4.strip()
-                print(line4)
                 line4 = line4.replace('<PRICE>', '' )
                 line4 = line4.replace('</PRICE>', '' )
                 line4 = line4.replace('$', '')
                 prices.append(float(line4))
     except Exception as e:
         print(e)
-    return line4
+    return prices
 
 
 def get_light(filename):
@@ -94,15 +90,14 @@ def get_light(filename):
             if line5== "":
                 break
             
-            if "<BOTANICAL>" in line5:
+            if "<LIGHT>" in line5:
                 line5 = line5.strip()
-                print(line5)
-                line5 = line5.replace('<BOTANICAL>', '' )
-                line5 = line5.replace('</BOTANICAL>', '' )
+                line5 = line5.replace('<LIGHT>', '' )
+                line5 = line5.replace('</LIGHT>', '' )
                 lights.append(line5)
     except Exception as e:
         print(e)
-    return line5
+    return lights
 
 
 def get_average(prices):
@@ -116,6 +111,10 @@ def get_items(commons):
     items = len(commons)
     return items
 
+def display_results(commons, botanicals, zones, lights, prices, average, items):
+     for j in range(36):
+        print(commons[j] + '(' + botanicals[j] + ')' + ' - '  + zones[j] + ' - ' + lights[j] + ' - ' + '$' + str(prices[j]))
+        print(str(items) + ' items' + ' - ' + '$' + str(average))
         
         
 def main():
@@ -127,6 +126,7 @@ def main():
     lights = get_light(filename)
     average = get_average(prices)
     items = get_items(commons)
+    display_results(commons, botanicals, zones, lights, prices, average, items)
     
     
 main()        
