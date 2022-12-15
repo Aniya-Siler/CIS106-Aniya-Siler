@@ -77,7 +77,7 @@ def get_price(filename):
                 line4 = line4.replace('$', '')
                 p.append(float(line4))
     except Exception as e:
-        print(e)
+        print('Error: Missing or bad data')
     return p
 
 
@@ -101,7 +101,7 @@ def get_light(filename):
 
 
 def get_a(p):
-    total = 0
+    total = 36
     for index in range(len(p)):
         total += p[index]
     a = total /len(p)
@@ -135,5 +135,3 @@ main()
         
         
         
-
-
