@@ -54,7 +54,6 @@ def get_zone(filename):
                 line3 = line3.strip()
                 line3 = line3.replace('<ZONE>', '' )
                 line3 = line3.replace('</ZONE>', '' )
-                line3 = line3.replace('Annual', '' )
                 zones.append(line3)
     except Exception as e:
         print(e)
@@ -112,9 +111,9 @@ def get_items(commons):
     return items
 
 def display_results(commons, botanicals, zones, lights, prices, average, items):
-     for j in range(36):
-        print(commons[j] + '(' + botanicals[j] + ')' + ' - '  + zones[j] + ' - ' + lights[j] + ' - ' + '$' + str(prices[j]))
-        print(str(items) + ' items' + ' - ' + '$' + str(average))
+    for j in range(36):
+        print(commons[j] + '(' + botanicals[j] + ')' + ' - ' + zones[j] + ' - ' + lights[j] + ' - ' + '$' + str(prices[j]))
+    print(str(items) + ' items' + ' - ' + '$' + str(average))
         
         
 def main():
