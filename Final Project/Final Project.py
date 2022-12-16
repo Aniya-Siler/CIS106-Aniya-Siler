@@ -11,7 +11,7 @@ def get_common(filename):
         commons = []
         while True:
             line1 = filename.readline()
-            if line1== "" :
+            if line1 == "":
                 break
             if "<COMMON>" in line1:
                 line1 = line1.strip()
@@ -29,7 +29,7 @@ def get_botanical(filename):
         botanicals = []
         while True:
             line2 = filename.readline()
-            if line2== "" :
+            if line2 == "" :
                 break
             
             if "<BOTANICAL>" in line2:
@@ -47,8 +47,8 @@ def get_zone(filename):
         filename = open('plant_catalog.xml', 'r')
         zones = []
         while True:
-            line3 = filename.readline( )
-            if line3== "":
+            line3 = filename.readline()
+            if line3 == "":
                 break
             
             if "<ZONE>" in line3:
@@ -66,8 +66,8 @@ def get_price(filename):
         filename = open('plant_catalog.xml', 'r')
         prices = []
         while True:
-            line4 = filename.readline( )
-            if line4== "":
+            line4 = filename.readline()
+            if line4 == "":
                 break
             
             if "<PRICE>" in line4:
@@ -87,7 +87,7 @@ def get_light(filename):
         lights = []
         while True:
             line5 = filename.readline()
-            if line5== "":
+            if line5 == "":
                 break
             
             if "<LIGHT>" in line5:
@@ -104,17 +104,21 @@ def get_average(prices):
     total = 0
     for index in range(len(prices)):
         total += prices[index]
-    average = total /len(prices)
+    average = total / len(prices)
     average = round(average, 2)
     return average
+
 
 def get_items(commons):
     items = len(commons)
     return items
 
-def display_results(commons, botanicals, zones, lights, prices, average, items):
+
+def display_results(commons, botanicals, zones, lights,
+prices, average, items):
     for j in range(36):
-        print(commons[j] + ' (' + botanicals[j] + ')' + ' - ' + zones[j] + ' - ' + lights[j] + ' - ' + '$' + str(prices[j]))
+        print(commons[j] + ' (' + botanicals[j] + ')' + ' - ' + zones[j] +
+        ' - ' + lights[j] + ' - ' + '$' + str(prices[j]))
     print(str(items) + ' items' + ' - ' + '$' + str(average))
         
         
