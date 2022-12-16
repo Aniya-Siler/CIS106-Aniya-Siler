@@ -105,6 +105,7 @@ def get_average(prices):
     for index in range(len(prices)):
         total += prices[index]
     average = total /len(prices)
+    average = round(average, 2)
     return average
 
 def get_items(commons):
@@ -130,4 +131,6 @@ def main():
     
     
 main()        
+        
+        
         
