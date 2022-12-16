@@ -114,7 +114,7 @@ def get_items(commons):
 
 def display_results(commons, botanicals, zones, lights, prices, average, items):
     for j in range(36):
-        print(commons[j] + '(' + botanicals[j] + ')' + ' - ' + zones[j] + ' - ' + lights[j] + ' - ' + '$' + str(prices[j]))
+        print(commons[j] + ' (' + botanicals[j] + ')' + ' - ' + zones[j] + ' - ' + lights[j] + ' - ' + '$' + str(prices[j]))
     print(str(items) + ' items' + ' - ' + '$' + str(average))
         
         
